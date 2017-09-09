@@ -1,0 +1,52 @@
+【架构图】
+FFmpeg源代码结构图 - 解码
+FFmpeg源代码结构图 - 编码
+【通用】
+FFmpeg 源代码简单分析：av_register_all()
+FFmpeg 源代码简单分析：avcodec_register_all()
+FFmpeg 源代码简单分析：内存的分配和释放（av_malloc()、av_free()等）
+FFmpeg 源代码简单分析：常见结构体的初始化和销毁（AVFormatContext，AVFrame等）
+FFmpeg 源代码简单分析：avio_open2()
+FFmpeg 源代码简单分析：av_find_decoder()和av_find_encoder()
+FFmpeg 源代码简单分析：avcodec_open2()
+FFmpeg 源代码简单分析：avcodec_close()
+【解码】
+图解FFMPEG打开媒体的函数avformat_open_input
+FFmpeg 源代码简单分析：avformat_open_input()
+FFmpeg 源代码简单分析：avformat_find_stream_info()
+FFmpeg 源代码简单分析：av_read_frame()
+FFmpeg 源代码简单分析：avcodec_decode_video2()
+FFmpeg 源代码简单分析：avformat_close_input()
+【编码】
+FFmpeg 源代码简单分析：avformat_alloc_output_context2()
+FFmpeg 源代码简单分析：avformat_write_header()
+FFmpeg 源代码简单分析：avcodec_encode_video()
+FFmpeg 源代码简单分析：av_write_frame()
+FFmpeg 源代码简单分析：av_write_trailer()
+【其它】
+FFmpeg源代码简单分析：日志输出系统（av_log()等）
+FFmpeg源代码简单分析：结构体成员管理系统-AVClass
+FFmpeg源代码简单分析：结构体成员管理系统-AVOption
+FFmpeg源代码简单分析：libswscale的sws_getContext()
+FFmpeg源代码简单分析：libswscale的sws_scale()
+FFmpeg源代码简单分析：libavdevice的avdevice_register_all()
+FFmpeg源代码简单分析：libavdevice的gdigrab
+【脚本】
+FFmpeg源代码简单分析：makefile
+FFmpeg源代码简单分析：configure
+偏底层的libavcodec的源代码分析文章列表如下：
+【解码- libavcodec H.264 解码器】
+FFmpeg的H.264解码器源代码简单分析：概述
+FFmpeg的H.264解码器源代码简单分析：解析器（Parser）部分
+FFmpeg的H.264解码器源代码简单分析：解码器主干部分
+FFmpeg的H.264解码器源代码简单分析：熵解码（EntropyDecoding）部分
+FFmpeg的H.264解码器源代码简单分析：宏块解码（Decode）部分-帧内宏块（Intra）
+FFmpeg的H.264解码器源代码简单分析：宏块解码（Decode）部分-帧间宏块（Inter）
+FFmpeg的H.264解码器源代码简单分析：环路滤波（LoopFilter）部分
+【解码-libavcodec HEVC 解码器】
+FFmpeg的HEVC解码器源代码简单分析：概述
+FFmpeg的HEVC解码器源代码简单分析：解析器（Parser）部分
+FFmpeg的HEVC解码器源代码简单分析：解码器主干部分
+FFmpeg的HEVC解码器源代码简单分析：CTU解码（CTUDecode）部分-PU
+FFmpeg的HEVC解码器源代码简单分析：CTU解码（CTU Decode）部分-TU
+FFmpeg的HEVC解码器源代码简单分析：环路滤波（LoopFilter）

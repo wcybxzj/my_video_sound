@@ -1,0 +1,75 @@
+* 本项目包含如下几种视音频测试示例：
+* (1)像素数据处理程序。包含RGB和YUV像素格式处理的函数。
+* (2)音频采样数据处理程序。包含PCM音频采样格式处理的函数。
+* (3)H.264码流分析程序。可以分离并解析NALU。
+* (4)AAC码流分析程序。可以分离并
+* (5)FLV封装格式分析程序。可以将FLV中的MP3音频码流分离出来。
+* (6)UDP-RTP协议分析程序。可以将分析UDP/RTP/MPEG-TS数据包。
+
+========================================================================
+(1)像素数据处理程序。包含RGB和YUV像素格式处理的函数。
+0.mp4 to yuv:
+1.jpg to yuv:
+
+ffmpeg -i 292x240.mp4 -c:v rawvideo -pix_fmt yuv420p 292x240_yuv420p.yuv
+ffmpeg -i 1024x1534.jpg -s 1024x1534 -pix_fmt yuvj420p 1024x1534_yuv420p.yuv
+ffmpeg -i 292x240.mp4 -c:v rawvideo -pix_fmt yuv444p 292x240_yuv444p.yuv
+ffmpeg -i 1024x1534.jpg -s 1024x1534 -pix_fmt yuvj444p 1024x1534_yuv444p.yuv
+
+2.jpg to rgb:
+ffmpeg -i 1024x1534.jpg -s 1024x1534 -pix_fmt rgb24 1024x1534_rgb24.rgb
+ffmpeg -i 495x526.jpg -s 495x526 -pix_fmt rgb24 495x526_rgb24.rgb
+ffmpeg -i 256x256.jpg -s 256x256 -pix_fmt rgb24 256x256_rgb24.rgb
+========================================================================
+(2)音频采样数据处理程序。包含PCM音频采样格式处理的函数。
+0.mp3 的速率是192kbps
+
+1.mp3 to pcm
+双声道的例子:
+ffmpeg -re -i 1.mp3 -acodec pcm_s16le -ar 44100 -ac 2 -f s16le 1.pcm
+ar:  音频采样率
+ac: 声道数
+f :输出pcm对应的容器格式 ，可以使用ffmpeg -formats 查看支持的容器格式
+
+2.pcm to mp3
+双声道的例子:
+ffmpeg -y -ac 2 -ar 44100 -f s16le -i 1.pcm -acodec libmp3lame -ab 192K 2.mp3
+
+3.pcm to mp3
+单声道的例子: 把左声道的pcm转成mp3
+ffmpeg -y -ac 1 -ar 44100 -f s16le -i output_l.pcm -acodec libmp3lame -ab 81K output_l.mp3
+========================================================================
+(3)H.264码流分析程序。可以分离并解析NALU。
+1.从mp4获取h264裸文件
+ffmpeg -i 408.mp4 -c:v copy -bsf:v h264_mp4toannexb -an out.h264
+
+2.windows播放h264裸流:
+Elecard_StreamEye
+
+3.ffplay播放h264裸流:
+========================================================================
+(4)AAC码流分析程序。
+ffmpeg -i 1.mp3 -c:a aac 1.aac
+======================================================================
+(5)FLV封装格式分析程序。可以将FLV中的MP3音频码流分离出来。
+mp4 to flv:
+ffmpeg -i 408.mp4 -f flv -vcodec copy -acodec copy 408.flv
+
+去掉flv中的声音
+ffmpeg  -i 408.flv  -an  408_only_video.flv
+
+去掉flv中的视频
+ffmpeg  -i 408.flv  -vn  408_only_sound.flv
+======================================================================
+(6)UDP-RTP协议分析程序。可以将分析UDP/RTP/MPEG-TS数据包。
+======================================================================
+h264 to h265:
+ffmpeg -i xxx.h264 xxx.hevc
+
+ffmpeg -pix_fmts
+
+h264 to yuv420p:
+ffmpeg -i 408.mp4 -c:v rawvideo -pix_fmt yuv420p 408.yuv
+
+mp4 to mpg:
+ffmpeg -i 408.mp4 -c:v mpeg2video -q:v 2 -c:a libmp3lame 408.mpg

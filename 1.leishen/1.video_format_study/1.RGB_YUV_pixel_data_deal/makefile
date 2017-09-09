@@ -1,0 +1,3 @@
+CFLAGS+=-lm
+LDFLAGS+=-lm
+

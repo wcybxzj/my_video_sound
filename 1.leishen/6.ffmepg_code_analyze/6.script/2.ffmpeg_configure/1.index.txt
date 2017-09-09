@@ -1,0 +1,45 @@
+1.前言:
+PS1：Configure的日志位于config.log文件中。查看该文件有助于分析Configure的过程。
+PS2：使用"sh -x script_name.sh"可以调试Shell脚本。
+
+2.Configure文件的整体流程:
+Configure的整体流程可以分成以下几步：
+Set Default Value：设置各个变量默认值；
+Parse Options：解析输入的选项；
+Check Compiler：检查编译器；
+die_license_disabled()：检查GPL等协议的设置情况；
+Check：检查编译环境（数学函数，第三方类库等）；
+Echo info：控制台上打印配置信息；
+Write basic info：向config.mak中写入一些基本信息；
+print_config()：向config.h、config.mak、config.asm中写入所有配置信enabled()：向config.mak写入所有enabled的组件信息；
+pkgconfig_generate()：向libavXXX/libavXXX.pc中写入pkgconfig信息（XXX代表avcodec，avformat等）；
+
+3.ffmepeg
+./configure 后会生成新文件
+config.asm
+config.h
+libavutil/avconfig.h is unchanged
+libavcodec/bsf_list.c is unchanged
+libavformat/protocol_list.c is unchanged
+
+4.Check
+Check部分是Configure中最重要的部分。该部分用于检查编译环境（例如数学函数，第三方类库等）。
+这一部分涉及到很多的函数。
+包括check_cflags()、check_struct()、require()、check_lib()、check_header()、check_func()、check_mathfunc()等等。
+
+check_func()：用于检查函数。
+check_header()：用于检查头文件。
+check_func_headers()：用于同时检查头文件和函数。
+check_mathfunc()：用于检查数学类函数。
+require()：检查第三方类库。
+check_cflags ()：用于检查编译器的cflags标志参数。
+
+4.Echo info
+Echo info用于在控制台上打印配置信息。Configure中该部分的代码如下所示。
+
+5.Write basic
+info用于向config.mak中写入一些基本信息。Configure中该部分的代码如下所示。
+
+6.print_config()
+print_config()用于向config.h、config.mak、config.asm中写入所有配置信息。Configure中该部分的代码如下所示。
+

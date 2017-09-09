@@ -1,0 +1,2 @@
+1.translate_format:转封装格式不转变音视频的编码
+2.translate_code:转换音视频的编码

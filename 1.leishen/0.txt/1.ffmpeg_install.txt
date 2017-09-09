@@ -1,0 +1,59 @@
+x264:
+git clone git://git.videolan.org/x264.git
+./configure --enable-shared --enable-static
+make && sudo make install
+./configure的时候没有指定前缀--prefix=/usr，
+很明显，libx264.so和libx264.a就会复制到/usr/local/lib下去，记住这里，等下会因为这里要做一些修改。
+================================================================================================
+yasm:
+http://www.tortall.net/projects/yasm/releases/yasm-1.2.0.tar.gz
+./configure
+make
+make install
+================================================================================================
+x265:
+make过程很长 超时了就重新执行一下
+下载:http://ftp.videolan.org/pub/videolan/x265/x265_2.4.tar.gz
+cd x265_2.4/source
+cmake .
+make
+make install
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig;
+echo $PKG_CONFIG_PATH
+================================================================================================
+mp3lame:
+https://sourceforge.net/projects/lame/files/lame/3.99/lame-3.99.5.tar.gz/download
+./configure
+make && sudo make install
+没有指定--prefix=/usr/local，所以mp3lame的libmp3lame.so和libmp3lame.a就被赋值到了/usr/local/lib下了。
+================================================================================================
+aac:
+wget -O fdk-aac.zip https://github.com/mstorsjo/fdk-aac/zipball/master
+unzip fdk-aac.zip
+cd mstorsjo-fdk-aac*
+autoreconf -fiv
+./configure
+make
+make install
+================================================================================================
+为了生成ffplay,需要SDL
+http://www.libsdl.org/download-2.0.php
+./configure --prefix=/usr/local
+make
+make install
+================================================================================================
+重新编译ffmpeg:
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
+echo $PKG_CONFIG_PATH
+./configure --enable-libx264 --enable-libx265 --enable-libmp3lame  --enable-gpl --extra-cflags=-I/usr/local/include --extra-ldflags=-L/usr/local/lib  --enable-libfdk-aac --enable-nonfree
+sudo make clean
+make&& make install
+================================================================================================
+ldd /usr/local/bin/ffmpeg
+	libx264.so.148 => not found
+	libmp3lame.so.0 => not found
+
+ln -s /usr/local/lib/libx264.so.148    /usr/lib64/libx264.so.148
+ln -s /usr/local/lib/libmp3lame.so.0   /usr/lib64/libmp3lame.so.0
+
+

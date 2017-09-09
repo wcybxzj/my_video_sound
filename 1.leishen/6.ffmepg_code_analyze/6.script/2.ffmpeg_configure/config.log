@@ -1,0 +1,27 @@
+check_ldflags -Wl,--as-needed
+test_ldflags -Wl,--as-needed
+check_ld cc -Wl,--as-needed
+check_cc -Wl,--as-needed
+BEGIN /tmp/ffconf.wXsVkHwK.c
+    1	int main(void){ return 0; }
+END /tmp/ffconf.wXsVkHwK.c
+gcc -Wl,--as-needed -c -o /tmp/ffconf.EQOe6h3T.o /tmp/ffconf.wXsVkHwK.c
+gcc -Wl,--as-needed -o /tmp/ffconf.h7LLffaQ /tmp/ffconf.EQOe6h3T.o
+check_ldflags -Wl,-z,noexecstack
+test_ldflags -Wl,-z,noexecstack
+check_ld cc -Wl,-z,noexecstack
+check_cc -Wl,-z,noexecstack
+BEGIN /tmp/ffconf.wXsVkHwK.c
+    1	int main(void){ return 0; }
+END /tmp/ffconf.wXsVkHwK.c
+gcc -Wl,-z,noexecstack -c -o /tmp/ffconf.EQOe6h3T.o /tmp/ffconf.wXsVkHwK.c
+gcc -Wl,--as-needed -Wl,-z,noexecstack -o /tmp/ffconf.h7LLffaQ /tmp/ffconf.EQOe6h3T.o
+check_func isatty
+check_ld cc
+check_cc
+BEGIN /tmp/ffconf.wXsVkHwK.c
+    1	extern int isatty();
+    2	int main(void){ isatty(); }
+END /tmp/ffconf.wXsVkHwK.c
+gcc -c -o /tmp/ffconf.EQOe6h3T.o /tmp/ffconf.wXsVkHwK.c
+gcc -Wl,--as-needed -Wl,-z,noexecstack -o /tmp/ffconf.h7LLffaQ /tmp/ffconf.EQOe6h3T.o

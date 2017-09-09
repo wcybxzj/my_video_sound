@@ -1,0 +1,6 @@
+ffmpeg+水印效果走过的一些坑
+http://fishtangtang.iteye.com/blog/2026414
+
+单个图片，测试成功
+ffmpeg -i w512_h288.flv -vf "movie=my_logo.png [watermark]; [in][watermark] overlay=10:10" w512_h288_add_watermark.mp4
+

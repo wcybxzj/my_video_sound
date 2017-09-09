@@ -1,0 +1,70 @@
+#!/bin/sh
+
+#Set Default Value
+#Set Default Value部分设置一些Configure的默认值。例如下面的代码。
+
+
+# 默认参数 default parameters
+# 日志
+logfile="config.log"
+
+# 安装路径 installation paths
+prefix_default="/usr/local"
+bindir_default='${prefix}/bin'
+datadir_default='${prefix}/share/ffmpeg'
+incdir_default='${prefix}/include'
+libdir_default='${prefix}/lib'
+mandir_default='${prefix}/share/man'
+shlibdir_default="$libdir_default"
+postproc_version_default="current"
+
+# 工具链 toolchain
+ar_default="ar"
+cc_default="gcc"
+cxx_default="g++"
+cc_version=\"unknown\"
+host_cc_default="gcc"
+install="install"
+ln_s="ln -sf"
+nm_default="nm"
+objformat="elf"
+pkg_config_default=pkg-config
+ranlib="ranlib"
+strip_default="strip"
+yasmexe_default="yasm"
+
+nm_opts='-g'
+nogas=":"
+
+# 机器 machine
+arch_default=$(uname -m)
+cpu="generic"
+
+# 操作系统 OS
+target_os_default=$(tolower $(uname -s))
+host_os=$target_os_default
+
+# alternative libpostproc version
+ALT_PP_VER_MAJOR=51
+ALT_PP_VER_MINOR=2
+ALT_PP_r
+enable avformat
+enable avutil
+enable postproc
+enable d settings
+SHFLAGS='-shared -Wl,-soname,$$(@F)'
+FFSERVERLDFLAGS=-Wl,-E
+# 前缀后缀
+LIBPREF="lib"
+LIBSUF=".a"
+FULLNAME='$(NAME)$(BUILDSUF)'
+# 名称
+LIBNAME='$(LIBPREF)$(FULLNAME)$(LIBSUF)'
+# 动态库前缀后缀
+SLIBPREF="lib"
+SLIBSUF=".so"
+# 名称
+SLIBNAME='$(SLIBPREF)$(FULLNAME)$(SLIBSUF)'
+SLIBNAME_WITH_VERSION='$(SLIBNAME).$(LIBVERSION)'
+SLIBNAME_WITH_MAJOR='$(SLIBNAME).$(LIBMAJOR)'
+LIB_INSTALL_

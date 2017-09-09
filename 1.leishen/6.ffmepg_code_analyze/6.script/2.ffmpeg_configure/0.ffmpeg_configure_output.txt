@@ -1,0 +1,127 @@
+0.环境准备
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig;
+echo $PKG_CONFIG_PATH
+
+
+======================================================================================================================================
+======================================================================================================================================
+======================================================================================================================================
+
+1.configure
+生成Makefile和生成配置文件
+config.h
+config.asm
+libavutil/avconfig.h
+libavcodec/bsf_list.c
+libavformat/protocol_list.c
+
+./configure --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-gpl --extra-cflags=-I/usr/local/include --extra-ldflags=-L/usr/local/lib  --enable-libfdk-aac --enable-nonfree
+
+install prefix            /usr/local
+source path               .
+C compiler                gcc
+C library                 glibc
+ARCH                      x86 (generic)
+big-endian                no
+runtime cpu detection     yes
+yasm                      yes
+MMX enabled               yes
+MMXEXT enabled            yes
+3DNow! enabled            yes
+3DNow! extended enabled   yes
+SSE enabled               yes
+SSSE3 enabled             yes
+AESNI enabled             yes
+AVX enabled               yes
+XOP enabled               yes
+FMA3 enabled              yes
+FMA4 enabled              yes
+i686 features enabled     yes
+CMOV is fast              yes
+EBX available             yes
+EBP available             yes
+debug symbols             yes
+strip symbols             yes
+optimize for size         no
+optimizations             yes
+static                    yes
+shared                    no
+postprocessing support    yes
+network support           yes
+threading support         pthreads
+safe bitstream reader     yes
+texi2html enabled         yes
+perl enabled              yes
+pod2man enabled           yes
+makeinfo enabled          yes
+makeinfo supports HTML    no
+
+
+External libraries:
+bzlib			libmp3lame		libx265			libxcb_shape		libxcb_xfixes		sdl			xlib
+iconv			libx264			libxcb			libxcb_shm		lzma			sdl2			zlib
+
+External libraries providing hardware acceleration:
+cuda			cuvid			nvenc
+
+Libraries:
+avcodec			avfilter		avformat		avutil			postproc		swresample		swscale
+avdevice
+
+Programs:
+ffmpeg			ffplay			ffprobe			ffserver
+
+Enabled decoders:
+aac			atrac1			eamad			lagarith		pcm_bluray		roq_dpcm		v210x
+aac_fixed		atrac3			eatgq			libfdk_aac		pcm_dvd			rpza			v308
+
+Enabled encoders:
+a64multi		bmp			hevc_nvenc		nvenc			pcm_s32le_planar	r210			utvideo
+a64multi5		cinepak			huffyuv			nvenc_h264		pcm_s64be		ra_144			v210
+
+Enabled hwaccels:
+h264_cuvid		mjpeg_cuvid		mpeg2_cuvid		mpeg4_cuvid		vc1_cuvid		vp8_cuvid		vp9_cuvid
+hevc_cuvid		mpeg1_cuvid
+
+Enabled parsers:
+aac			cook			dvbsub			h261			mpeg4video		rv30			vorbis
+aac_latm		dca			dvd_nav			h263			mpegaudio		rv40			vp3
+ac3			dirac			dvdsub			h264			mpegvideo		sipr			vp8
+
+
+Enabled demuxers:
+aa			cdg			h261			ircam			mv			realtext		thp
+aac			cdxl			h263			iss			mvi			redspark		threedostr
+
+Enabled muxers:
+a64			dnxhd			hash			mlp			ogg			pcm_u32be		stream_segment
+ac3			dts			hds			mmf			ogv			pcm_u32le		swf
+
+Enabled protocols:
+async			data			gopher			icecast			pipe			rtp			tee
+cache			ffrtmphttp		hls			md5			prompeg			srtp			udp
+
+Enabled filters:
+abench			asetnsamples		convolution		format			mandelbrot		realtime		smptehdbars
+acompressor		asetrate		cover_rect		framepack		maskedmerge		removegrain		spectrumsynth
+
+Enabled bsfs:
+aac_adtstoasc		dump_extradata		hevc_mp4toannexb	mjpega_dump_header	mpeg4_unpack_bframes	remove_extradata	vp9_superframe
+chomp			extract_extradata	imx_dump_header		mov2textsub		noise			text2movsub		vp9_superframe_split
+dca_core		h264_mp4toannexb	mjpeg2jpeg		mp3_header_decompress	null
+
+Enabled indevs:
+alsa			dv1394			fbdev			lavfi			oss			v4l2			xcbgrab
+
+Enabled outdevs:
+alsa			fbdev			oss			sdl2			v4l2			xv
+
+License: nonfree and unredistributable
+Creating configuration files ...
+
+======================================================================================================================================
+======================================================================================================================================
+======================================================================================================================================
+
+2.sudo make
+make后生成很多文件,可用make clean 清理
