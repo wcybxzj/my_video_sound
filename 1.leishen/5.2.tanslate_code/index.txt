@@ -1,2 +1,4 @@
 1.translate_format:转封装格式不转变音视频的编码
 2.translate_code:转换音视频的编码
+3.other:
+4.ffmpeg_simple_study:ffmpeg.c函数结构简单分析（画图）
