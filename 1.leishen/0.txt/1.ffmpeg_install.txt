@@ -56,4 +56,9 @@ ldd /usr/local/bin/ffmpeg
 ln -s /usr/local/lib/libx264.so.148    /usr/lib64/libx264.so.148
 ln -s /usr/local/lib/libmp3lame.so.0   /usr/lib64/libmp3lame.so.0
 
+============================================================================================
+ffmpeg+eclispe cdt进行调试
+http://blog.csdn.net/forfuture3513/article/details/52464834
+
+
 
