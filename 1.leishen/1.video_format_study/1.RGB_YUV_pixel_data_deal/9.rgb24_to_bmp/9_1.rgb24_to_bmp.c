@@ -151,6 +151,7 @@ void work(char *rgb24path, int w, int h)
 //将RGB24格式像素数据封装为BMP图像
 int main(int argc, char **argv)
 {
-	work("1024x1534_rgb24.rgb",1024 ,1534);
+	//work("1024x1534_rgb24.rgb",1024 ,1534);
+	work("/root/www/video_sound/1.leishen/7.3.libswscale/2.create_test_pic/colorbar_1280x720_rgb24.rgb",1280,720);
 	return EXIT_SUCCESS;
 }
