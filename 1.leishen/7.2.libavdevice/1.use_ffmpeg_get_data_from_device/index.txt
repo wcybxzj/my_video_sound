@@ -70,6 +70,38 @@ ffmpeg -f v4l2 -i /dev/video0  -vcodec mpeg2video -f mpeg2video udp://192.168.1.
 ffplay -vcodec mpeg2video udp://192.168.1.108:6666
 =============================================================================
 3.屏幕录制（Windows平台下保存为本地文件或者发送实时流）
-Linux下使用FFmpeg进行屏幕录制相对比较方便，可以使用x11grab，使用如下的命令：
-=============================================================================
+Linux录屏并且录音:
+shell/2.record_screen.sh
 
+windows录屏并且录音从内装麦克风: -r 是帧率
+ffmpeg -f dshow -i video="screen-capture-recorder" -f dshow -i audio="内装麦克风 (Conexant 20672 SmartAudi" -r 5 -vcodec libx264 -preset:v ultrafast -tune:v zerolatency -acodec libmp3lame MyDesktop.mkv 
+
+windows录屏并且录音从耳机(没测试):
+ffmpeg -f dshow -i video="screen-capture-recorder" -f dshow -i audio="virtual-audio-capturer" -r 5 -vcodec libx264 -preset:v ultrafast -tune:v zerolatency -acodec libmp3lame MyDesktop.mkv 
+=============================================================================
+3.2. 编码为H.264，发布UDP
+下面的命令可以将屏幕录制后编码为H.264并封装成UDP发送到组播地址
+[plain] view plain copy
+ffmpeg -f dshow -i video="screen-capture-recorder" -r 5 -vcodec libx264 -preset:v ultrafast -tune:v zerolatency -f h264 udp://233.233.233.223:6666  
+
+3.3. 编码为H.264，发布RTP
+下面的命令可以将屏幕录制后编码为H.264并封装成RTP并发送到组播地址
+[plain] view plain copy
+ffmpeg -f dshow -i video="screen-capture-recorder" -vcodec libx264 -preset:v ultrafast -tune:v zerolatency -f rtp rtp://233.233.233.223:6666>test.sdp  
+
+
+3.4. 编码为H.264，发布RTMP
+原理同上，不再赘述。
+ffmpeg -f dshow -i video="Integrated Camera" -vcodec libx264 -preset:v ultrafast -tune:v zerolatency -f flv rtmp://localhost/oflaDemo/livestream  
+
+ffplay -max_delay 100000 "rtmp://localhost/oflaDemo/livestream live=1"  
+
+4.另一种屏幕录制的方式（2014.10.1更新）
+（1）“desktop”：抓取整张桌面。或者抓取桌面中的一个特定的区域。
+（2）“title={窗口名称}”：抓取屏幕中特定的一个窗口。
+
+最简单的抓屏：
+ffmpeg -f gdigrab -i desktop out.mpg  
+
+从屏幕的（10,20）点处开始，抓取640x480的屏幕，设定帧率为5
+ffmpeg -f gdigrab -framerate 5 -offset_x 10 -offset_y 20 -video_size 640x480 -i desktop out.mpg  
