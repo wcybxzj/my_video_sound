@@ -1,0 +1,75 @@
+windows:
+如果windows上开启了vmware虚拟机要断开摄像头才能找到 'Integrated Camera'
+
+1.列设备
+ffmpeg -list_devices true -f dshow -i dummy
+[dshow @0388f5e0] DirectShow video devices
+[dshow @0388f5e0]  "Integrated Camera"
+[dshow @0388f5e0] "screen-capture-recorder"
+[dshow @0388f5e0] DirectShow audio devices
+[dshow @0388f5e0]  "鍐呰楹﹀厠椋?(Conexant20672 SmartAudi"
+[dshow @0388f5e0]  "virtual-audio-capturer"  )"
+=============================================================================
+2.获取摄像头数据（保存为本地文件或者发送实时流）
+2.1.编码为H.264，保存为本地文件
+下面这条命令，实现了从摄像头读取数据并编码为H.264，最后保存成mycamera.mkv。
+windows:
+ffmpeg -f dshow -i video="Integrated Camera" -vcodec libx264 mycamera.mkv
+linux:
+ffmpeg -f video4linux2 -s 320*240 -r 10 -i /dev/video0 test.mp4
+=============================================================================
+2.2. 直接播放摄像头的数据
+widnows:
+ffplay -f dshow -i video="Integrated Camera"
+除了使用DirectShow作为输入外，使用VFW也可以读取到摄像头的数据
+ffplay -f vfwcap -i 0
+
+linux:
+ffplay -f video4linux2 -i /dev/video0
+
+FFmpeg的list_options查看设备的选项：
+ffmpeg -list_options true -f dshow -i video="Integrated Camera"
+=============================================================================
+2.3. 编码为H.264，发布UDP
+下面这条命令，实现了：获取摄像头数据->编码为H.264->封装为UDP并发送至组播地址。
+windows:
+ffmpeg -f dshow -i video="Integrated Camera" -vcodec libx264 -preset:v ultrafast -tune:v zerolatency -f h264 udp://233.233.233.223:6666
+linux:
+ffmpeg -f v4l2 -i /dev/video0 -vcodec libx264 -preset:v ultrafast -tune:v zerolatency -f h264 udp://233.233.233.223:6666
+
+注1：考虑到提高libx264的编码速度，添加了-preset:v ultrafast和-tune:v zerolatency两个选项。
+注2：高分辨率的情况下，使用UDP可能出现丢包的情况。为了避免这种情况，可以添加–s 参数（例如-s 320x240）调小分辨率。
+
+=============================================================================
+2.4. 编码为H.264，发布RTP
+下面这条命令，实现了：获取摄像头数据->编码为H.264->封装为RTP并发送至组播地址。
+windows:
+ffmpeg -f dshow -i video="Integrated Camera" -vcodec libx264 -preset:v ultrafast -tune:v zerolatency -f rtp rtp://233.233.233.223:6666>test.sdp
+注1：考虑到提高libx264的编码速度，添加了-preset:v ultrafast和-tune:v zerolatency两个选项。
+注2：结尾添加“>test.sdp”可以在发布的同时生成sdp文件。该文件可以用于该视频流的播放。
+=============================================================================
+2.5. 编码为H.264，发布RTMP
+下面这条命令，实现了：获取摄像头数据->编码为H.264->并发送至RTMP服务器。
+windows:
+ffmpeg -f dshow -i video="Integrated Camera" -vcodec libx264 -preset:v ultrafast -tune:v zerolatency -f flv rtmp://localhost/oflaDemo/livestream
+
+=============================================================================
+2.6. 编码为MPEG2，发布UDP
+windows:
+与编码为H.264类似，指明-vcodec即可。
+ffmpeg -f dshow -i video="Integrated Camera" -vcodec mpeg2video -f mpeg2video udp://233.233.233.223:6666
+播放MPEG2的UDP流如下。指明-vcodec为mpeg2video即可
+ffplay -vcodec mpeg2video udp://233.233.233.223:6666
+
+
+linux:
+192.168.1.106:
+ffmpeg -f v4l2 -i /dev/video0  -vcodec mpeg2video -f mpeg2video udp://192.168.1.108:6666
+
+192.168.1.108:
+ffplay -vcodec mpeg2video udp://192.168.1.108:6666
+=============================================================================
+3.屏幕录制（Windows平台下保存为本地文件或者发送实时流）
+Linux下使用FFmpeg进行屏幕录制相对比较方便，可以使用x11grab，使用如下的命令：
+=============================================================================
+

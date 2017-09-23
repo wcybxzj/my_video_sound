@@ -45,7 +45,7 @@ make install
 重新编译ffmpeg:
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 echo $PKG_CONFIG_PATH
-./configure --enable-libx264 --enable-libx265 --enable-libmp3lame  --enable-gpl --extra-cflags=-I/usr/local/include --extra-ldflags=-L/usr/local/lib  --enable-libfdk-aac --enable-nonfree
+./configure --enable-libxcb  --enable-libx264 --enable-libx265 --enable-libmp3lame  --enable-gpl --extra-cflags=-I/usr/local/include --extra-ldflags=-L/usr/local/lib  --enable-libfdk-aac --enable-nonfree
 sudo make clean
 make&& make install
 ================================================================================================
