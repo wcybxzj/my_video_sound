@@ -65,8 +65,11 @@ extern "C"
 #endif
 #endif
 
+//可以通过下面的宏定义来确定是否将解码后的YUV420P数据输出成文件：
 //Output YUV420P
 #define OUTPUT_YUV420P 0
+
+//可以通过下面的宏定义来确定使用VFW或者是Dshow打开摄像头：
 //'1' Use Dshow
 //'0' Use VFW
 #define USE_DSHOW 0
@@ -97,7 +100,8 @@ int sfp_refresh_thread(void *opaque)
 	return 0;
 }
 
-
+//只能在windows
+//ffmpeg -list_devices true -f dshow -i dummy 
 //Show Dshow Device
 void show_dshow_device(){
 	AVFormatContext *pFormatCtx = avformat_alloc_context();
@@ -143,7 +147,6 @@ void show_avfoundation_device(){
 
 int main(int argc, char* argv[])
 {
-
 	AVFormatContext *pFormatCtx;
 	int             i, videoindex;
 	AVCodecContext  *pCodecCtx;
@@ -170,6 +173,18 @@ int main(int argc, char* argv[])
 	//Show VFW Options
 	show_vfw_device();
 
+	//使用libavdevice读取数据和以前的例子中直接打开视频文件比较类似
+	//以前的例子:
+	//AVFormatContext *pFormatCtx = avformat_alloc_context();
+	//avformat_open_input(&pFormatCtx, "test.h265",NULL,NULL);
+	//
+	//使用libavdevice的时候，唯一的不同在于需要首先查找用于输入的设备。
+	//在这里使用av_find_input_format()完成：
+	//AVFormatContext *pFormatCtx = avformat_alloc_context();
+	//AVInputFormat *ifmt=av_find_input_format("vfwcap");
+	//avformat_open_input(&pFormatCtx, 0, ifmt,NULL);
+	//
+	//因为系统的设备也被FFmpeg认为是一种输入的格式（即AVInputFormat）
 #if USE_DSHOW
 	AVInputFormat *ifmt=av_find_input_format("dshow");
 	//Set own video device name
@@ -203,19 +218,19 @@ int main(int argc, char* argv[])
 	}
 #endif
 
-
 	if(avformat_find_stream_info(pFormatCtx,NULL)<0)
 	{
 		printf("Couldn't find stream information.\n");
 		return -1;
 	}
 	videoindex=-1;
-	for(i=0; i<pFormatCtx->nb_streams; i++)
+	for(i=0; i<pFormatCtx->nb_streams; i++){
 		if(pFormatCtx->streams[i]->codec->codec_type==AVMEDIA_TYPE_VIDEO)
 		{
 			videoindex=i;
 			break;
 		}
+	}
 	if(videoindex==-1)
 	{
 		printf("Couldn't find a video stream.\n");
@@ -270,7 +285,9 @@ int main(int argc, char* argv[])
 #endif
 
 	struct SwsContext *img_convert_ctx;
-	img_convert_ctx = sws_getContext(pCodecCtx->width, pCodecCtx->height, pCodecCtx->pix_fmt, pCodecCtx->width, pCodecCtx->height, AV_PIX_FMT_YUV420P, SWS_BICUBIC, NULL, NULL, NULL);
+	img_convert_ctx = sws_getContext(pCodecCtx->width, pCodecCtx->height, pCodecCtx->pix_fmt,
+			pCodecCtx->width, pCodecCtx->height, AV_PIX_FMT_YUV420P, SWS_BICUBIC, NULL, NULL, NULL);
+
 	//------------------------------
 	SDL_Thread *video_tid = SDL_CreateThread(sfp_refresh_thread,NULL);
 	//
@@ -298,7 +315,8 @@ int main(int argc, char* argv[])
 						pFrameYUV->linesize[0]=bmp->pitches[0];
 						pFrameYUV->linesize[1]=bmp->pitches[2];
 						pFrameYUV->linesize[2]=bmp->pitches[1];
-						sws_scale(img_convert_ctx, (const unsigned char* const*)pFrame->data, pFrame->linesize, 0, pCodecCtx->height, pFrameYUV->data, pFrameYUV->linesize);
+						sws_scale(img_convert_ctx, (const unsigned char* const*)pFrame->data, pFrame->linesize,
+								0, pCodecCtx->height, pFrameYUV->data, pFrameYUV->linesize);
 
 #if OUTPUT_YUV420P
 						int y_size=pCodecCtx->width*pCodecCtx->height;
@@ -323,9 +341,7 @@ int main(int argc, char* argv[])
 		}else if(event.type==SFM_BREAK_EVENT){
 			break;
 		}
-
 	}
-
 
 	sws_freeContext(img_convert_ctx);
 

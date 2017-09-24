@@ -8,11 +8,14 @@ CFLAGS2+= -lavformat -lavdevice -lpostproc  -lswresample -lswscale  -lavcodec  -
 CFLAGS3+= -pthread  -lavdevice -lavfilter -lpostproc -lavformat -lavcodec -ldl -liconv -lXfixes -lXext -lX11 -lasound -lSDL  -lSDL2 -lx264 -lx265 -lmp3lame -lfdk-aac -llzma -lz -lrt -lswresample -lswscale -lavutil -lm -lxcb-shm -lxcb-xfixes -lxcb-shape -lXv -lbz2 -lnuma
 
 
-all: 1.ffmpeg_read_camera
+all: 2.ffmpeg_read_camera 3.ffmpeg_screen_capture
 
-1.ffmpeg_read_camera:1.ffmpeg_read_camera.cpp
-	$(CC) 1.ffmpeg_read_camera.cpp  -o $@ $(CFLAGS3)
+2.ffmpeg_read_camera:2.ffmpeg_read_camera.cpp
+	$(CC) 2.ffmpeg_read_camera.cpp  -o $@ $(CFLAGS3)
+
+3.ffmpeg_screen_capture: 3.ffmpeg_screen_capture.cpp
+	$(CC) 3.ffmpeg_screen_capture.cpp  -o $@ $(CFLAGS3)
 
 clean:
-	$(RM) -r 1.ffmpeg_read_camera
+	$(RM) -r 2.ffmpeg_read_camera 3.ffmpeg_screen_capture
 
