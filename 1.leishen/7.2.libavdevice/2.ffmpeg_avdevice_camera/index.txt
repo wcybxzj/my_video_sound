@@ -1,0 +1,2 @@
+查看设备
+ffmpge -devices
