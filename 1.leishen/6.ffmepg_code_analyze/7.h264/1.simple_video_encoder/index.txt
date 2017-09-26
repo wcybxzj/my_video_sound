@@ -1,0 +1,5 @@
+http://blog.csdn.net/leixiaohua1020/article/details/42078645
+最简单的视频编码器：编译
+最简单的视频编码器：基于libx264（编码YUV为H.264）
+最简单的视频编码器：基于libx265（编码YUV为H.265）
+最简单的视频编码器：libvpx（编码YUV为VP8）
