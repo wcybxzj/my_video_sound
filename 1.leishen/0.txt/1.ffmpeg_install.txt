@@ -1,3 +1,6 @@
+centos ffmpeg编译支持vp8:
+https://trac.ffmpeg.org/wiki/CompilationGuide/Centos#libvpx
+===============================================================
 x264:
 git clone git://git.videolan.org/x264.git
 ./configure --enable-shared --enable-static
@@ -20,6 +23,12 @@ make
 make install
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig;
 echo $PKG_CONFIG_PATH
+================================================================================================
+
+https://github.com/webmproject/libvpx
+./configure --target=x86_64-linux-gcc --disable-examples --disable-unit-tests
+make
+make install
 ================================================================================================
 mp3lame:
 https://sourceforge.net/projects/lame/files/lame/3.99/lame-3.99.5.tar.gz/download
@@ -45,13 +54,13 @@ make install
 重新编译ffmpeg:
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 echo $PKG_CONFIG_PATH
-./configure --enable-libxcb  --enable-libx264 --enable-libx265 --enable-libmp3lame  --enable-gpl --extra-cflags=-I/usr/local/include --extra-ldflags=-L/usr/local/lib  --enable-libfdk-aac --enable-nonfree
+./configure --enable-libxcb  --enable-libx264 --enable-libx265 --enable-libvpx --enable-libmp3lame  --enable-gpl --extra-cflags=-I/usr/local/include --extra-ldflags=-L/usr/local/lib  --enable-libfdk-aac --enable-nonfree
 sudo make clean
 make&& make install
 ================================================================================================
 ldd /usr/local/bin/ffmpeg
-	libx264.so.148 => not found
-	libmp3lame.so.0 => not found
+libx264.so.148 => not found
+libmp3lame.so.0 => not found
 
 ln -s /usr/local/lib/libx264.so.148    /usr/lib64/libx264.so.148
 ln -s /usr/local/lib/libmp3lame.so.0   /usr/lib64/libmp3lame.so.0

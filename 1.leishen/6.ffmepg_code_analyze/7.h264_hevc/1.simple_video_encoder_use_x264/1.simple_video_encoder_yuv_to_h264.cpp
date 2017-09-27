@@ -15,8 +15,6 @@
  * It's the simplest encoder example based on libx264.
  */
 
-
-
 #define __STDC_CONSTANT_MACROS
 
 #include <stdio.h>
