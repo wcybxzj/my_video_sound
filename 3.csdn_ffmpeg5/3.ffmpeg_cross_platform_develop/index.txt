@@ -1,0 +1,22 @@
+qt开发maxos程序
+
+1.编译适合的x86_64darwin系统的ffmpeg库函数
+方法1:
+可以用1.complie_ffmpeg.sh生成output把里面的
+方法2:
+用3.csdn_ffmpeg5/2.complie_ffmpeg/2.complie_ffmpeg_on_mac/2.build-ffmpeg.sh来生成
+
+无论哪种都要把make install出来的inclide和lib单独放到一个文件夹/Users/ybx/www/libffmpeg_static
+====================== ====================== ====================== ======================
+2.mac qt-creator创建一个简单的macos app来调用下编译出来的libFFmpeg
+lesson2:ffmpeg Mac ios编译补充02
+1.macos下qtcreator使用libffmpeg进行简单开发
+打开qtcreator->file->choose
+名称:QtFFmpeg
+创建路径:/Users/ybx/www/video_sound/3.csdn_ffmpeg5/3.ffmpeg_cross_platform_develop
+直接都下一步
+run 启动一个mac gui window
+
+====================== ====================== ====================== ======================
+====================== ====================== ====================== ======================
+====================== ====================== ====================== ======================

@@ -7,7 +7,7 @@ lesson2:编译FFmpeg
 lipo -info 2.complie_ffmpeg_on_mac/thin/x86_64/lib/libavcodec.a
 x86_64
 ====================================================================
-lesson3:ffmpeg Mac ios编译补充01
+lesson2:ffmpeg Mac ios编译补充01
 1.最普通的编译ffmpeg不进行交叉编译
 cd ffmpeg-3.3
 ./configure --prefix=$PWD/output_static --enable-static
@@ -15,16 +15,20 @@ cd ffmpeg-3.3
 ./configure --prefix=$PWD/output_shared --enable-shared
 
 make -j5
-make install 生成x86_64架构 bin可执行文件,lib,share,incluce到output
+make install 生成x86_64架构 bin可执行文件,lib,share,incluce到output_static
 
-mkdir libffmpeg
-cp output_static/lib output/include libffmpeg
-libffmpeg 就可以在开发macos程序时候使用这个libffmpeg
+mkdir /Users/ybx/www/libffmpeg_static
+cp output_static/lib output/include /User/ybx/libffmpeg_static
+libffmpeg_static 就可以在开发macos程序时候使用这个libffmpeg_static
 ====================================================================
 lesson2:ffmpeg Mac ios编译补充02
 1.macos下qtcreator使用libffmpeg进行简单开发
+下载最新的qt-creator http://download.qt.io/official_releases/qt/5.11/
 打开qtcreator->file->choose
 名称:testFFmpeg
-创建路径://TODO
+创建路径:/Users/ybx/www/video_sound/3.csdn_ffmpeg5/2.complie_ffmpeg/2.ffmpeg_mac_ios_complie_add02
+把 /Users/ybx/www/video_sound/3.csdn_ffmpeg5/2.complie_ffmpeg/1.complie_ffmpeg_on_mac/FFmpeg-iOS/
+放到 /Users/ybx/www/video_sound/3.csdn_ffmpeg5/2.complie_ffmpeg/2.ffmpeg_mac_ios_complie_add02/testFFmpeg
+并且FFmpeg改名为libffmpeg
 
 

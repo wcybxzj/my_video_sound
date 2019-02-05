@@ -1,6 +1,8 @@
+*.o
 *.log
 .DS_Store
-3.csdn_ffmpeg5/2.complie_ffmpeg/2.complie_ffmpeg_on_mac/FFmpeg-iOS
-3.csdn_ffmpeg5/2.complie_ffmpeg/2.complie_ffmpeg_on_mac/ffmpeg-3.3
-3.csdn_ffmpeg5/2.complie_ffmpeg/2.complie_ffmpeg_on_mac/scratch/
-3.csdn_ffmpeg5/2.complie_ffmpeg/2.complie_ffmpeg_on_mac/thin/
+libffmpeg
+3.csdn_ffmpeg5/2.complie_ffmpeg/1.complie_ffmpeg_on_mac/FFmpeg-iOS
+3.csdn_ffmpeg5/2.complie_ffmpeg/1.complie_ffmpeg_on_mac/ffmpeg-3.3
+3.csdn_ffmpeg5/2.complie_ffmpeg/1.complie_ffmpeg_on_mac/scratch/
+3.csdn_ffmpeg5/2.complie_ffmpeg/1.complie_ffmpeg_on_mac/thin/
