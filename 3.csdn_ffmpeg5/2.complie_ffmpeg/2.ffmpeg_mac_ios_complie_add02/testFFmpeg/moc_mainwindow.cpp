@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../../../../../www2/video_sound/3.csdn_ffmpeg5/2.complie_ffmpeg/2.ffmpeg_mac_ios_complie_add02/testFFmpeg/mainwindow.h"
+#include "mainwindow.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
