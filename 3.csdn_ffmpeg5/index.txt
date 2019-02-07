@@ -23,44 +23,35 @@ linux alsa sound 库
 apt install libasound2-dev
 
 ================================== ================================== ==================================
-ubuntu安装虚拟摄像头
-
+lesson4:h264视频数据接收
+1.ubuntu安装虚拟摄像头
 apt-get install module-assistant
 m-a prepare
 m-a update
 m-a a-i v4l2loopback
 cd /usr/src
 dpkg -i v4l2loopback-modules-4.15.0-45-generic_0.10.0-1ubuntu1+4.15.0-45.48_amd64.deb
-
 modprobe v4l2loopback
-
 ls /dev/video0
-================================== ================================== ==================================
-qt-creator
-https://blog.csdn.net/m0_37688984/article/details/80216123
 
+2.qt-creator
+https://blog.csdn.net/m0_37688984/article/details/80216123
 安装:
 http://download.qt.io/official_releases/qt/5.11/
 默认安装位置/opt/Qt5.11.3
 tools->options->Build & Run->Qt Version 看qmake是否配置好了
-
 vim  /usr/lib/x86_64-linux-gnu/qt-default/qtchooser/default.conf
 /opt/Qt5.11.3/5.11.3/gcc_64/bin
 /opt/Qt5.11.3
-
 将一个已经存在c项目转换成qt项目
 例如redis
 cd redis
 qmake -project
-================================== ================================== ==================================
-lesson4:h264视频数据接收
-把ios client项目和linux server采集项目跑起来
 
-linux:192.168.1.107
+3.把ios client项目和linux server采集usb2.0的摄像头
+linux:192.168.1.110
 ./IOTCamera
 
 ios:
-IntelliDev:需要指请求到192.168.1.107
-
-我这的ios没向读出数据 不知道为什么
-
+IntelliDev:
+GUI/DeviceList/PopupViewContorller.m需要指请求到192.168.1.110
