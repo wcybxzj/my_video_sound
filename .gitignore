@@ -1,6 +1,9 @@
 *.o
 *.log
 .DS_Store
+.cproject
+.project
+.settings
 libffmpeg
 3.csdn_ffmpeg5/2.complie_ffmpeg/1.complie_ffmpeg_on_mac/FFmpeg-iOS
 3.csdn_ffmpeg5/2.complie_ffmpeg/1.complie_ffmpeg_on_mac/ffmpeg-3.3
