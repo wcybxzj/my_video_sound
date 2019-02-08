@@ -1,0 +1,9 @@
+#!/bin/bash
+rm -f lib/*
+cd libavcodec
+g++ -shared -fpic  allcodecs.c dsputil.c imgconvert.c msrle.c truespeech.c utils_codec.c -o  ../libmyavcodec.so
+cd ../libavformat
+g++ -shared -fpic allformats.c avidec.c aviobuf.c avio.c cutils.c file.c utils_format.c -o  ../libmyavformat.so
+cd ..
+mv -f ./*.so /usr/local/lib/
+ldconfig /etc/ld.so.conf

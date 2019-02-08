@@ -1,0 +1,675 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALIGN	libavcodec/utils_codec.c	87;"	d	file:
+AVCODEC_H	libavcodec/avcodec.h	2;"	d
+AVCODEC_MAX_AUDIO_FRAME_SIZE	libavcodec/avcodec.h	41;"	d
+AVCodec	libavcodec/avcodec.h	/^	typedef struct AVCodec$/;"	s
+AVCodec	libavcodec/avcodec.h	/^	}AVCodec;$/;"	t	typeref:struct:AVCodec
+AVCodecContext	libavcodec/avcodec.h	/^	typedef struct AVCodecContext$/;"	s
+AVCodecContext	libavcodec/avcodec.h	/^	}AVCodecContext;$/;"	t	typeref:struct:AVCodecContext
+AVERROR_INVALIDDATA	libavformat/avformat.h	21;"	d
+AVERROR_IO	libavformat/avformat.h	19;"	d
+AVERROR_NOFMT	libavformat/avformat.h	23;"	d
+AVERROR_NOMEM	libavformat/avformat.h	22;"	d
+AVERROR_NOTSUPP	libavformat/avformat.h	24;"	d
+AVERROR_NUMEXPECTED	libavformat/avformat.h	20;"	d
+AVERROR_UNKNOWN	libavformat/avformat.h	18;"	d
+AVFMT_NOFILE	libavformat/avformat.h	30;"	d
+AVFORMAT_H	libavformat/avformat.h	2;"	d
+AVFormatContext	libavformat/avformat.h	/^	typedef struct AVFormatContext  \/\/ format I\/O context$/;"	s
+AVFormatContext	libavformat/avformat.h	/^	} AVFormatContext;$/;"	t	typeref:struct:AVFormatContext
+AVFormatParameters	libavformat/avformat.h	/^	typedef struct AVFormatParameters$/;"	s
+AVFormatParameters	libavformat/avformat.h	/^	} AVFormatParameters;$/;"	t	typeref:struct:AVFormatParameters
+AVFrame	libavcodec/avcodec.h	/^	typedef struct AVFrame$/;"	s
+AVFrame	libavcodec/avcodec.h	/^	} AVFrame;$/;"	t	typeref:struct:AVFrame
+AVIContext	libavformat/avidec.c	/^} AVIContext;$/;"	t	typeref:struct:__anon2	file:
+AVIF_HASINDEX	libavformat/avidec.c	7;"	d	file:
+AVIF_MUSTUSEINDEX	libavformat/avidec.c	8;"	d	file:
+AVIIF_INDEX	libavformat/avidec.c	5;"	d	file:
+AVINDEX_KEYFRAME	libavformat/avformat.h	34;"	d
+AVIO_H	libavformat/avio.h	2;"	d
+AVIStream	libavformat/avidec.c	/^} AVIStream;$/;"	t	typeref:struct:__anon1	file:
+AVIndexEntry	libavformat/avformat.h	/^	typedef struct AVIndexEntry$/;"	s
+AVIndexEntry	libavformat/avformat.h	/^	} AVIndexEntry;$/;"	t	typeref:struct:AVIndexEntry
+AVInputFormat	libavformat/avformat.h	/^	typedef struct AVInputFormat$/;"	s
+AVInputFormat	libavformat/avformat.h	/^	} AVInputFormat;$/;"	t	typeref:struct:AVInputFormat
+AVPALETTE_COUNT	libavcodec/avcodec.h	107;"	d
+AVPALETTE_SIZE	libavcodec/avcodec.h	106;"	d
+AVPROBE_SCORE_MAX	libavformat/avformat.h	36;"	d
+AVPacket	libavformat/avformat.h	/^	typedef struct AVPacket$/;"	s
+AVPacket	libavformat/avformat.h	/^	} AVPacket;$/;"	t	typeref:struct:AVPacket
+AVPacketList	libavformat/avformat.h	/^	typedef struct AVPacketList$/;"	s
+AVPacketList	libavformat/avformat.h	/^	} AVPacketList;$/;"	t	typeref:struct:AVPacketList
+AVPaletteControl	libavcodec/avcodec.h	/^	typedef struct AVPaletteControl$/;"	s
+AVPaletteControl	libavcodec/avcodec.h	/^	} AVPaletteControl;$/;"	t	typeref:struct:AVPaletteControl
+AVPicture	libavcodec/avcodec.h	/^	typedef struct AVPicture$/;"	s
+AVPicture	libavcodec/avcodec.h	/^	} AVPicture;$/;"	t	typeref:struct:AVPicture
+AVProbeData	libavformat/avformat.h	/^	typedef struct AVProbeData$/;"	s
+AVProbeData	libavformat/avformat.h	/^	} AVProbeData;$/;"	t	typeref:struct:AVProbeData
+AVRational	libavutil/rational.h	/^typedef struct AVRational$/;"	s
+AVRational	libavutil/rational.h	/^} AVRational;$/;"	t	typeref:struct:AVRational
+AVSEEK_FLAG_ANY	libavformat/avformat.h	28;"	d
+AVSEEK_FLAG_BACKWARD	libavformat/avformat.h	26;"	d
+AVSEEK_FLAG_BYTE	libavformat/avformat.h	27;"	d
+AVStream	libavformat/avformat.h	/^	typedef struct AVStream$/;"	s
+AVStream	libavformat/avformat.h	/^	} AVStream;$/;"	t	typeref:struct:AVStream
+AVUTIL_H	libavutil/avutil.h	2;"	d
+AV_NOPTS_VALUE	libavcodec/avcodec.h	23;"	d
+AV_STRINGIFY	libavcodec/avcodec.h	14;"	d
+AV_STRINGIFY	libavutil/avutil.h	14;"	d
+AV_TIME_BASE	libavcodec/avcodec.h	24;"	d
+AV_TOSTRING	libavcodec/avcodec.h	15;"	d
+AV_TOSTRING	libavutil/avutil.h	15;"	d
+BERRNO_H	berrno.h	2;"	d
+BPP	libavcodec/imgconvert.c	1121;"	d	file:
+BPP	libavcodec/imgconvert.c	1142;"	d	file:
+BPP	libavcodec/imgconvert.c	1164;"	d	file:
+BPP	libavcodec/imgconvert.c	1170;"	d	file:
+BPP	libavcodec/imgconvert.c	1191;"	d	file:
+BPP	libavcodec/imgconvert.c	1222;"	d	file:
+BPP	libavcodec/imgconvert_template.h	881;"	d
+ByteIOContext	libavformat/avio.h	/^typedef struct ByteIOContext$/;"	s
+ByteIOContext	libavformat/avio.h	/^} ByteIOContext;$/;"	t	typeref:struct:ByteIOContext
+CODEC_ID_MSRLE	libavcodec/avcodec.h	/^		CODEC_ID_MSRLE,$/;"	e	enum:CodecID
+CODEC_ID_NONE	libavcodec/avcodec.h	/^		CODEC_ID_NONE$/;"	e	enum:CodecID
+CODEC_ID_TRUESPEECH	libavcodec/avcodec.h	/^		CODEC_ID_TRUESPEECH,$/;"	e	enum:CodecID
+CODEC_TYPE_AUDIO	libavcodec/avcodec.h	/^		CODEC_TYPE_AUDIO,$/;"	e	enum:CodecType
+CODEC_TYPE_DATA	libavcodec/avcodec.h	/^		CODEC_TYPE_DATA$/;"	e	enum:CodecType
+CODEC_TYPE_UNKNOWN	libavcodec/avcodec.h	/^		CODEC_TYPE_UNKNOWN =  - 1,$/;"	e	enum:CodecType
+CODEC_TYPE_VIDEO	libavcodec/avcodec.h	/^		CODEC_TYPE_VIDEO,$/;"	e	enum:CodecType
+COMMON_H	libavutil/common.h	2;"	d
+CONFIG_WIN32	libavutil/common.h	10;"	d
+C_CCIR_TO_JPEG	libavcodec/imgconvert.c	707;"	d	file:
+C_JPEG_TO_CCIR	libavcodec/imgconvert.c	/^static inline int C_JPEG_TO_CCIR(int y)$/;"	f	file:
+CodecID	libavcodec/avcodec.h	/^	enum CodecID$/;"	g
+CodecTag	libavformat/avidec.c	/^} CodecTag;$/;"	t	typeref:struct:__anon3	file:
+CodecType	libavcodec/avcodec.h	/^	enum CodecType$/;"	g
+ConvertEntry	libavcodec/imgconvert.c	/^typedef struct ConvertEntry$/;"	s	file:
+ConvertEntry	libavcodec/imgconvert.c	/^} ConvertEntry;$/;"	t	typeref:struct:ConvertEntry	file:
+DSPUTIL_H	libavcodec/dsputil.h	2;"	d
+EAGAIN	berrno.h	20;"	d
+EAGAIN	berrno.h	22;"	d
+EDGE_WIDTH	libavcodec/utils_codec.c	5;"	d	file:
+EINTR	berrno.h	10;"	d
+EINTR	berrno.h	12;"	d
+EINVAL	berrno.h	30;"	d
+EINVAL	berrno.h	32;"	d
+EIO	berrno.h	15;"	d
+EIO	berrno.h	17;"	d
+ENOENT	berrno.h	5;"	d
+ENOENT	berrno.h	7;"	d
+ENOMEM	berrno.h	25;"	d
+ENOMEM	berrno.h	27;"	d
+EPIPE	berrno.h	35;"	d
+EPIPE	berrno.h	37;"	d
+FETCH_NEXT_STREAM_BYTE	libavcodec/msrle.c	24;"	d	file:
+FFMAX	libavcodec/utils_codec.c	10;"	d	file:
+FFMAX	libavformat/avidec.c	15;"	d	file:
+FFMIN	libavformat/avidec.c	14;"	d	file:
+FFMPEG_VERSION	libavcodec/avcodec.h	12;"	d
+FFMPEG_VERSION_INT	libavcodec/avcodec.h	11;"	d
+FF_ALPHA_SEMI_TRANSP	libavcodec/imgconvert_template.h	844;"	d
+FF_ALPHA_TRANSP	libavcodec/imgconvert_template.h	843;"	d
+FF_BUFFER_HINTS_PRESERVE	libavcodec/msrle.c	11;"	d	file:
+FF_BUFFER_HINTS_READABLE	libavcodec/msrle.c	10;"	d	file:
+FF_BUFFER_HINTS_REUSABLE	libavcodec/msrle.c	12;"	d	file:
+FF_BUFFER_HINTS_VALID	libavcodec/msrle.c	9;"	d	file:
+FF_COLOR_GRAY	libavcodec/imgconvert.c	8;"	d	file:
+FF_COLOR_RGB	libavcodec/imgconvert.c	7;"	d	file:
+FF_COLOR_YUV	libavcodec/imgconvert.c	9;"	d	file:
+FF_COLOR_YUV_JPEG	libavcodec/imgconvert.c	10;"	d	file:
+FF_INPUT_BUFFER_PADDING_SIZE	libavcodec/avcodec.h	43;"	d
+FF_PIXEL_PACKED	libavcodec/imgconvert.c	13;"	d	file:
+FF_PIXEL_PALETTE	libavcodec/imgconvert.c	14;"	d	file:
+FF_PIXEL_PLANAR	libavcodec/imgconvert.c	12;"	d	file:
+FF_QUIT_EVENT	ffplay.c	24;"	d	file:
+FIX	libavcodec/imgconvert.c	1704;"	d	file:
+FIX	libavcodec/imgconvert.c	664;"	d	file:
+FMT_RGB24	libavcodec/imgconvert.c	1175;"	d	file:
+FMT_RGB24	libavcodec/imgconvert_template.h	883;"	d
+FMT_RGBA32	libavcodec/imgconvert.c	1198;"	d	file:
+FMT_RGBA32	libavcodec/imgconvert_template.h	884;"	d
+INT64_MAX	libavutil/common.h	51;"	d
+INTERNAL_BUFFER_SIZE	libavcodec/utils_codec.c	85;"	d	file:
+INT_MAX	libavcodec/utils_codec.c	8;"	d	file:
+INT_MAX	libavformat/avidec.c	10;"	d	file:
+IO_BUFFER_SIZE	libavformat/aviobuf.c	6;"	d	file:
+InternalBuffer	libavcodec/utils_codec.c	/^typedef struct InternalBuffer$/;"	s	file:
+InternalBuffer	libavcodec/utils_codec.c	/^} InternalBuffer;$/;"	t	typeref:struct:InternalBuffer	file:
+LE_32	libavcodec/truespeech.c	30;"	d	file:
+LIBAVCODEC_BUILD	libavcodec/avcodec.h	19;"	d
+LIBAVCODEC_IDENT	libavcodec/avcodec.h	21;"	d
+LIBAVCODEC_VERSION	libavcodec/avcodec.h	18;"	d
+LIBAVCODEC_VERSION_INT	libavcodec/avcodec.h	17;"	d
+LIBAVFORMAT_BUILD	libavformat/avformat.h	11;"	d
+LIBAVFORMAT_IDENT	libavformat/avformat.h	13;"	d
+LIBAVFORMAT_VERSION	libavformat/avformat.h	10;"	d
+LIBAVFORMAT_VERSION_INT	libavformat/avformat.h	9;"	d
+LIBAVUTIL_BUILD	libavutil/avutil.h	19;"	d
+LIBAVUTIL_IDENT	libavutil/avutil.h	21;"	d
+LIBAVUTIL_VERSION	libavutil/avutil.h	18;"	d
+LIBAVUTIL_VERSION_INT	libavutil/avutil.h	17;"	d
+MATHEMATICS_H	libavutil/mathematics.h	2;"	d
+MAX_AUDIOQ_SIZE	ffplay.c	27;"	d	file:
+MAX_NEG_CROP	libavcodec/dsputil.h	4;"	d
+MAX_STREAMS	libavformat/avformat.h	38;"	d
+MAX_VIDEOQ_SIZE	ffplay.c	26;"	d	file:
+MKTAG	libavformat/avidec.c	12;"	d	file:
+MsrleContext	libavcodec/msrle.c	/^typedef struct MsrleContext$/;"	s	file:
+MsrleContext	libavcodec/msrle.c	/^} MsrleContext;$/;"	t	typeref:struct:MsrleContext	file:
+ONE_HALF	libavcodec/imgconvert.c	663;"	d	file:
+PIX_FMT_BGR24	libavutil/avutil.h	/^		PIX_FMT_BGR24,     \/\/ Packed pixel, 3 bytes per pixel, BGRBGR...$/;"	e	enum:PixelFormat
+PIX_FMT_GRAY8	libavutil/avutil.h	/^		PIX_FMT_GRAY8,$/;"	e	enum:PixelFormat
+PIX_FMT_MONOBLACK	libavutil/avutil.h	/^		PIX_FMT_MONOBLACK, \/\/ 0 is black$/;"	e	enum:PixelFormat
+PIX_FMT_MONOWHITE	libavutil/avutil.h	/^		PIX_FMT_MONOWHITE, \/\/ 0 is white$/;"	e	enum:PixelFormat
+PIX_FMT_NB	libavutil/avutil.h	/^		PIX_FMT_NB,$/;"	e	enum:PixelFormat
+PIX_FMT_NONE	libavutil/avutil.h	/^		PIX_FMT_NONE =  - 1,$/;"	e	enum:PixelFormat
+PIX_FMT_PAL8	libavutil/avutil.h	/^		PIX_FMT_PAL8,      \/\/ 8 bit with RGBA palette$/;"	e	enum:PixelFormat
+PIX_FMT_RGB24	libavutil/avutil.h	/^		PIX_FMT_RGB24,     \/\/ Packed pixel, 3 bytes per pixel, RGBRGB...$/;"	e	enum:PixelFormat
+PIX_FMT_RGB555	libavutil/avutil.h	/^		PIX_FMT_RGB555,    \/\/ always stored in cpu endianness, most significant bit to 1$/;"	e	enum:PixelFormat
+PIX_FMT_RGB565	libavutil/avutil.h	/^		PIX_FMT_RGB565,    \/\/ always stored in cpu endianness$/;"	e	enum:PixelFormat
+PIX_FMT_RGBA32	libavutil/avutil.h	/^		PIX_FMT_RGBA32,    \/\/ Packed pixel, 4 bytes per pixel, BGRABGRA..., stored in cpu endianness$/;"	e	enum:PixelFormat
+PIX_FMT_UYVY411	libavutil/avutil.h	/^		PIX_FMT_UYVY411,   \/\/ Packed pixel, Cb Y0 Y1 Cr Y2 Y3$/;"	e	enum:PixelFormat
+PIX_FMT_UYVY422	libavutil/avutil.h	/^		PIX_FMT_UYVY422,   \/\/ Packed pixel, Cb Y0 Cr Y1$/;"	e	enum:PixelFormat
+PIX_FMT_XVMC_MPEG2_IDCT	libavutil/avutil.h	/^		PIX_FMT_XVMC_MPEG2_IDCT,$/;"	e	enum:PixelFormat
+PIX_FMT_XVMC_MPEG2_MC	libavutil/avutil.h	/^		PIX_FMT_XVMC_MPEG2_MC,  \/\/ XVideo Motion Acceleration via common packet passing(xvmc_render.h)$/;"	e	enum:PixelFormat
+PIX_FMT_YUV410P	libavutil/avutil.h	/^		PIX_FMT_YUV410P,   \/\/ Planar YUV 4:1:0 (1 Cr & Cb sample per 4x4 Y samples)$/;"	e	enum:PixelFormat
+PIX_FMT_YUV411P	libavutil/avutil.h	/^		PIX_FMT_YUV411P,   \/\/ Planar YUV 4:1:1 (1 Cr & Cb sample per 4x1 Y samples)$/;"	e	enum:PixelFormat
+PIX_FMT_YUV420P	libavutil/avutil.h	/^		PIX_FMT_YUV420P,   \/\/ Planar YUV 4:2:0 (1 Cr & Cb sample per 2x2 Y samples)$/;"	e	enum:PixelFormat
+PIX_FMT_YUV422	libavutil/avutil.h	/^		PIX_FMT_YUV422,    \/\/ Packed pixel, Y0 Cb Y1 Cr$/;"	e	enum:PixelFormat
+PIX_FMT_YUV422P	libavutil/avutil.h	/^		PIX_FMT_YUV422P,   \/\/ Planar YUV 4:2:2 (1 Cr & Cb sample per 2x1 Y samples)$/;"	e	enum:PixelFormat
+PIX_FMT_YUV444P	libavutil/avutil.h	/^		PIX_FMT_YUV444P,   \/\/ Planar YUV 4:4:4 (1 Cr & Cb sample per 1x1 Y samples)$/;"	e	enum:PixelFormat
+PIX_FMT_YUVJ420P	libavutil/avutil.h	/^		PIX_FMT_YUVJ420P,  \/\/ Planar YUV 4:2:0 full scale (jpeg)$/;"	e	enum:PixelFormat
+PIX_FMT_YUVJ422P	libavutil/avutil.h	/^		PIX_FMT_YUVJ422P,  \/\/ Planar YUV 4:2:2 full scale (jpeg)$/;"	e	enum:PixelFormat
+PIX_FMT_YUVJ444P	libavutil/avutil.h	/^		PIX_FMT_YUVJ444P,  \/\/ Planar YUV 4:4:4 full scale (jpeg)$/;"	e	enum:PixelFormat
+PKT_FLAG_KEY	libavformat/avformat.h	32;"	d
+PROBE_BUF_MAX	libavformat/utils_format.c	8;"	d	file:
+PROBE_BUF_MIN	libavformat/utils_format.c	7;"	d	file:
+PacketQueue	ffplay.c	/^typedef struct PacketQueue$/;"	s	file:
+PacketQueue	ffplay.c	/^} PacketQueue;$/;"	t	typeref:struct:PacketQueue	file:
+PixFmtInfo	libavcodec/imgconvert.c	/^typedef struct PixFmtInfo$/;"	s	file:
+PixFmtInfo	libavcodec/imgconvert.c	/^} PixFmtInfo;$/;"	t	typeref:struct:PixFmtInfo	file:
+PixelFormat	libavutil/avutil.h	/^	enum PixelFormat$/;"	g
+RATIONAL_H	libavutil/rational.h	2;"	d
+RGBA_IN	libavcodec/imgconvert.c	1106;"	d	file:
+RGBA_IN	libavcodec/imgconvert.c	1208;"	d	file:
+RGBA_IN	libavcodec/imgconvert_template.h	878;"	d
+RGBA_OUT	libavcodec/imgconvert.c	1115;"	d	file:
+RGBA_OUT	libavcodec/imgconvert.c	1217;"	d	file:
+RGBA_OUT	libavcodec/imgconvert_template.h	880;"	d
+RGB_IN	libavcodec/imgconvert.c	1098;"	d	file:
+RGB_IN	libavcodec/imgconvert.c	1129;"	d	file:
+RGB_IN	libavcodec/imgconvert.c	1150;"	d	file:
+RGB_IN	libavcodec/imgconvert.c	1168;"	d	file:
+RGB_IN	libavcodec/imgconvert.c	1177;"	d	file:
+RGB_IN	libavcodec/imgconvert.c	1200;"	d	file:
+RGB_IN	libavcodec/imgconvert_template.h	877;"	d
+RGB_NAME	libavcodec/imgconvert.c	1096;"	d	file:
+RGB_NAME	libavcodec/imgconvert.c	1127;"	d	file:
+RGB_NAME	libavcodec/imgconvert.c	1148;"	d	file:
+RGB_NAME	libavcodec/imgconvert.c	1174;"	d	file:
+RGB_NAME	libavcodec/imgconvert.c	1197;"	d	file:
+RGB_NAME	libavcodec/imgconvert_template.h	882;"	d
+RGB_OUT	libavcodec/imgconvert.c	1137;"	d	file:
+RGB_OUT	libavcodec/imgconvert.c	1157;"	d	file:
+RGB_OUT	libavcodec/imgconvert.c	1169;"	d	file:
+RGB_OUT	libavcodec/imgconvert.c	1184;"	d	file:
+RGB_OUT	libavcodec/imgconvert_template.h	2;"	d
+RGB_OUT	libavcodec/imgconvert_template.h	879;"	d
+RGB_TO_U	libavcodec/imgconvert.c	723;"	d	file:
+RGB_TO_U_CCIR	libavcodec/imgconvert.c	735;"	d	file:
+RGB_TO_V	libavcodec/imgconvert.c	727;"	d	file:
+RGB_TO_V_CCIR	libavcodec/imgconvert.c	739;"	d	file:
+RGB_TO_Y	libavcodec/imgconvert.c	719;"	d	file:
+RGB_TO_Y_CCIR	libavcodec/imgconvert.c	731;"	d	file:
+SCALEBITS	libavcodec/imgconvert.c	662;"	d	file:
+STRIDE_ALIGN	libavcodec/utils_codec.c	6;"	d	file:
+TRANSP_INDEX	libavcodec/imgconvert.c	1054;"	d	file:
+TSContext	libavcodec/truespeech.c	/^typedef struct TSContext$/;"	s	file:
+TSContext	libavcodec/truespeech.c	/^} TSContext;$/;"	t	typeref:struct:TSContext	file:
+UINT_MAX	libavformat/utils_format.c	5;"	d	file:
+URLContext	libavformat/avio.h	/^typedef struct URLContext$/;"	s
+URLContext	libavformat/avio.h	/^} URLContext;$/;"	t	typeref:struct:URLContext
+URLProtocol	libavformat/avio.h	/^typedef struct URLProtocol$/;"	s
+URLProtocol	libavformat/avio.h	/^} URLProtocol;$/;"	t	typeref:struct:URLProtocol
+URL_EOF	libavformat/avio.h	4;"	d
+URL_RDONLY	libavformat/avio.h	8;"	d
+URL_RDWR	libavformat/avio.h	10;"	d
+URL_WRONLY	libavformat/avio.h	9;"	d
+VIDEO_PICTURE_QUEUE_SIZE	ffplay.c	29;"	d	file:
+VideoPicture	ffplay.c	/^typedef struct VideoPicture$/;"	s	file:
+VideoPicture	ffplay.c	/^} VideoPicture;$/;"	t	typeref:struct:VideoPicture	file:
+VideoState	ffplay.c	/^typedef struct VideoState$/;"	s	file:
+VideoState	ffplay.c	/^} VideoState;$/;"	t	typeref:struct:VideoState	file:
+YUV_TO_RGB1	libavcodec/imgconvert.c	684;"	d	file:
+YUV_TO_RGB1_CCIR	libavcodec/imgconvert.c	666;"	d	file:
+YUV_TO_RGB2	libavcodec/imgconvert.c	693;"	d	file:
+YUV_TO_RGB2_CCIR	libavcodec/imgconvert.c	676;"	d	file:
+Y_CCIR_TO_JPEG	libavcodec/imgconvert.c	701;"	d	file:
+Y_JPEG_TO_CCIR	libavcodec/imgconvert.c	704;"	d	file:
+__BSWAP_H__	libavutil/bswap.h	2;"	d
+__TRUESPEECH_DATA__	libavcodec/truespeech_data.h	2;"	d
+abort_request	ffplay.c	/^    int abort_request;$/;"	m	struct:PacketQueue	file:
+abort_request	ffplay.c	/^    int abort_request;$/;"	m	struct:VideoState	file:
+actx	libavformat/avformat.h	/^		AVCodecContext *actx;  \/\/ codec context, change from AVCodecContext *codec;$/;"	m	struct:AVStream
+alloc_picture	ffplay.c	/^static void alloc_picture(void *opaque)$/;"	f	file:
+audio_buf	ffplay.c	/^    uint8_t audio_buf[(AVCODEC_MAX_AUDIO_FRAME_SIZE *3) \/ 2];\/\/ 输出的音频缓存$/;"	m	struct:VideoState	file:
+audio_buf_index	ffplay.c	/^    int audio_buf_index;$/;"	m	struct:VideoState	file:
+audio_buf_size	ffplay.c	/^    unsigned int audio_buf_size;$/;"	m	struct:VideoState	file:
+audio_decode_frame	ffplay.c	/^static int audio_decode_frame(VideoState *is, uint8_t *audio_buf, double *pts_ptr)$/;"	f	file:
+audio_decoder_mutex	ffplay.c	/^    SDL_mutex *audio_decoder_mutex;\/\/音频线程互斥$/;"	m	struct:VideoState	file:
+audio_pkt	ffplay.c	/^    AVPacket audio_pkt;\/\/ 音频包属性，只一个指针指向原始音频包数据，非直接包含音频数据包数据$/;"	m	struct:VideoState	file:
+audio_pkt_data	ffplay.c	/^    uint8_t *audio_pkt_data;$/;"	m	struct:VideoState	file:
+audio_pkt_size	ffplay.c	/^    int audio_pkt_size;$/;"	m	struct:VideoState	file:
+audio_st	ffplay.c	/^    AVStream *audio_st;\/\/ 关联的主要数据结构是AVCodecContext 和 AVIStream$/;"	m	struct:VideoState	file:
+audio_stream	ffplay.c	/^    int audio_stream;\/\/\/ 音频流索引， 实际表示 AVFormatContext结构中 AVStream*streams[]数组中的索引$/;"	m	struct:VideoState	file:
+audioq	ffplay.c	/^    PacketQueue audioq;\/\/ 音频数据包队列，注意一包音频数据可能包含几个音频帧$/;"	m	struct:VideoState	file:
+av_add_index_entry	libavformat/utils_format.c	/^int av_add_index_entry(AVStream *st, int64_t pos, int64_t timestamp, int size, int distance, int flags)$/;"	f
+av_close_input_file	libavformat/utils_format.c	/^void av_close_input_file(AVFormatContext *s)$/;"	f
+av_destruct_packet	libavformat/avformat.h	/^	static inline void av_destruct_packet(AVPacket *pkt)$/;"	f
+av_fast_realloc	libavcodec/utils_codec.c	/^void *av_fast_realloc(void *ptr, unsigned int *size, unsigned int min_size)$/;"	f
+av_free	libavcodec/utils_codec.c	/^void av_free(void *ptr)$/;"	f
+av_free_packet	libavformat/avformat.h	/^	static inline void av_free_packet(AVPacket *pkt)$/;"	f
+av_freep	libavcodec/utils_codec.c	/^void av_freep(void *arg)$/;"	f
+av_get_packet	libavformat/avformat.h	/^	static inline int av_get_packet(ByteIOContext *s, AVPacket *pkt, int size)$/;"	f
+av_gettime	ffplay.c	/^int64_t av_gettime(void)$/;"	f
+av_index_search_timestamp	libavformat/utils_format.c	/^int av_index_search_timestamp(AVStream *st, int64_t wanted_timestamp, int flags) $/;"	f
+av_malloc	libavcodec/utils_codec.c	/^void *av_malloc(unsigned int size)$/;"	f
+av_mallocz	libavcodec/utils_codec.c	/^void *av_mallocz(unsigned int size)$/;"	f
+av_new_stream	libavformat/utils_format.c	/^AVStream *av_new_stream(AVFormatContext *s, int id)$/;"	f
+av_open_input_file	libavformat/utils_format.c	/^int av_open_input_file(AVFormatContext **ic_ptr, const char *filename, AVInputFormat *fmt,$/;"	f
+av_open_input_stream	libavformat/utils_format.c	/^int av_open_input_stream(AVFormatContext **ic_ptr, ByteIOContext *pb, const char *filename,$/;"	f
+av_probe_input_format	libavformat/utils_format.c	/^AVInputFormat *av_probe_input_format(AVProbeData *pd, int is_opened)$/;"	f
+av_q2d	libavutil/rational.h	/^static inline double av_q2d(AVRational a)$/;"	f
+av_read_packet	libavformat/utils_format.c	/^int av_read_packet(AVFormatContext *s, AVPacket *pkt)$/;"	f
+av_realloc	libavcodec/utils_codec.c	/^void *av_realloc(void *ptr, unsigned int size)$/;"	f
+av_register_all	libavformat/allformats.c	/^void av_register_all(void)$/;"	f
+av_register_input_format	libavformat/utils_format.c	/^void av_register_input_format(AVInputFormat *format)$/;"	f
+av_rescale	libavutil/mathematics.h	/^static inline int64_t av_rescale(int64_t a, int64_t b, int64_t c)$/;"	f
+av_set_pts_info	libavformat/utils_format.c	/^void av_set_pts_info(AVStream *s, int pts_wrap_bits, int pts_num, int pts_den)$/;"	f
+avcodec_align_dimensions	libavcodec/utils_codec.c	/^void avcodec_align_dimensions(AVCodecContext *s, int *width, int *height)$/;"	f
+avcodec_alloc_context	libavcodec/utils_codec.c	/^AVCodecContext *avcodec_alloc_context(void)$/;"	f
+avcodec_check_dimensions	libavcodec/utils_codec.c	/^int avcodec_check_dimensions(void *av_log_ctx, unsigned int w, unsigned int h)$/;"	f
+avcodec_close	libavcodec/utils_codec.c	/^int avcodec_close(AVCodecContext *avctx)$/;"	f
+avcodec_decode_audio	libavcodec/utils_codec.c	/^int avcodec_decode_audio(AVCodecContext *avctx, int16_t *samples, int *frame_size_ptr,$/;"	f
+avcodec_decode_video	libavcodec/utils_codec.c	/^int avcodec_decode_video(AVCodecContext *avctx, AVFrame *picture, int *got_picture_ptr,$/;"	f
+avcodec_default_free_buffers	libavcodec/utils_codec.c	/^void avcodec_default_free_buffers(AVCodecContext *s)$/;"	f
+avcodec_default_get_buffer	libavcodec/utils_codec.c	/^int avcodec_default_get_buffer(AVCodecContext *s, AVFrame *pic)$/;"	f
+avcodec_default_reget_buffer	libavcodec/utils_codec.c	/^int avcodec_default_reget_buffer(AVCodecContext *s, AVFrame *pic)$/;"	f
+avcodec_default_release_buffer	libavcodec/utils_codec.c	/^void avcodec_default_release_buffer(AVCodecContext *s, AVFrame *pic)$/;"	f
+avcodec_find_decoder	libavcodec/utils_codec.c	/^AVCodec *avcodec_find_decoder(enum CodecID id)$/;"	f
+avcodec_get_chroma_sub_sample	libavcodec/imgconvert.c	/^void avcodec_get_chroma_sub_sample(int pix_fmt, int *h_shift, int *v_shift)$/;"	f
+avcodec_init	libavcodec/utils_codec.c	/^void avcodec_init(void)$/;"	f
+avcodec_open	libavcodec/utils_codec.c	/^int avcodec_open(AVCodecContext *avctx, AVCodec *codec)$/;"	f
+avcodec_register_all	libavcodec/allcodecs.c	/^void avcodec_register_all(void)$/;"	f
+avctx	libavcodec/msrle.c	/^    AVCodecContext *avctx;$/;"	m	struct:MsrleContext	file:
+avg_bits_per_pixel	libavcodec/imgconvert.c	/^static int avg_bits_per_pixel(int pix_fmt)$/;"	f	file:
+avi_iformat	libavformat/avidec.c	/^AVInputFormat avi_iformat =$/;"	v
+avi_load_index	libavformat/avidec.c	/^static int avi_load_index(AVFormatContext *s)$/;"	f	file:
+avi_probe	libavformat/avidec.c	/^static int avi_probe(AVProbeData *p)$/;"	f	file:
+avi_read_close	libavformat/avidec.c	/^static int avi_read_close(AVFormatContext *s)$/;"	f	file:
+avi_read_header	libavformat/avidec.c	/^static int avi_read_header(AVFormatContext *s, AVFormatParameters *ap)$/;"	f	file:
+avi_read_idx1	libavformat/avidec.c	/^static int avi_read_idx1(AVFormatContext *s, int size)$/;"	f	file:
+avi_read_packet	libavformat/avidec.c	/^int avi_read_packet(AVFormatContext *s, AVPacket *pkt)$/;"	f
+avidec_init	libavformat/avidec.c	/^int avidec_init(void)$/;"	f
+avpicture_alloc	libavcodec/imgconvert.c	/^int avpicture_alloc(AVPicture *picture, int pix_fmt, int width, int height)$/;"	f
+avpicture_fill	libavcodec/imgconvert.c	/^int avpicture_fill(AVPicture *picture, uint8_t *ptr, int pix_fmt, int width, int height)$/;"	f
+avpicture_free	libavcodec/imgconvert.c	/^void avpicture_free(AVPicture *picture)$/;"	f
+avpicture_get_size	libavcodec/imgconvert.c	/^int avpicture_get_size(int pix_fmt, int width, int height)$/;"	f
+base	libavcodec/avcodec.h	/^		uint8_t *base[4];$/;"	m	struct:AVFrame
+base	libavcodec/utils_codec.c	/^	uint8_t *base[4];$/;"	m	struct:InternalBuffer	file:
+be2me_16	libavutil/bswap.h	27;"	d
+be2me_32	libavutil/bswap.h	28;"	d
+bit_rate	libavcodec/avcodec.h	/^		int bit_rate;$/;"	m	struct:AVCodecContext
+bitcopy_n	libavcodec/imgconvert.c	/^static inline unsigned int bitcopy_n(unsigned int a, int n)$/;"	f	file:
+bits_per_sample	libavcodec/avcodec.h	/^		int bits_per_sample;$/;"	m	struct:AVCodecContext
+block_align	libavcodec/avcodec.h	/^		int block_align;$/;"	m	struct:AVCodecContext
+bmp	ffplay.c	/^    SDL_Overlay *bmp;$/;"	m	struct:VideoPicture	file:
+bswap_16	libavutil/bswap.h	/^static inline uint16_t bswap_16(uint16_t x)$/;"	f
+bswap_32	libavutil/bswap.h	/^static inline uint32_t bswap_32(uint32_t x)$/;"	f
+buf	libavcodec/msrle.c	/^    unsigned char *buf;$/;"	m	struct:MsrleContext	file:
+buf	libavformat/avformat.h	/^		unsigned char *buf;$/;"	m	struct:AVProbeData
+buf_end	libavformat/avio.h	/^    unsigned char *buf_ptr,  *buf_end;$/;"	m	struct:ByteIOContext
+buf_ptr	libavformat/avio.h	/^    unsigned char *buf_ptr,  *buf_end;$/;"	m	struct:ByteIOContext
+buf_size	libavformat/avformat.h	/^		int buf_size;$/;"	m	struct:AVProbeData
+buffer	libavformat/avio.h	/^    unsigned char *buffer;$/;"	m	struct:ByteIOContext
+buffer_size	libavformat/avio.h	/^    int buffer_size;$/;"	m	struct:ByteIOContext
+build_rgb_palette	libavcodec/imgconvert.c	/^static void build_rgb_palette(uint8_t *palette, int has_alpha)$/;"	f	file:
+c_ccir_to_jpeg	libavcodec/imgconvert.c	/^static uint8_t c_ccir_to_jpeg[256];$/;"	v	file:
+c_jpeg_to_ccir	libavcodec/imgconvert.c	/^static uint8_t c_jpeg_to_ccir[256];$/;"	v	file:
+capabilities	libavcodec/avcodec.h	/^		int capabilities;$/;"	m	struct:AVCodec
+channels	libavcodec/avcodec.h	/^		int channels;$/;"	m	struct:AVCodecContext
+clean_index	libavformat/avidec.c	/^static void clean_index(AVFormatContext *s)$/;"	f	file:
+clip	libavutil/common.h	/^static inline int clip(int a, int amin, int amax)$/;"	f
+close	libavcodec/avcodec.h	/^		int(*close)(AVCodecContext*);$/;"	m	struct:AVCodec
+codec	libavcodec/avcodec.h	/^		struct AVCodec *codec;$/;"	m	struct:AVCodecContext	typeref:struct:AVCodecContext::AVCodec
+codec_bmp_tags	libavformat/avidec.c	/^const CodecTag codec_bmp_tags[] =$/;"	v
+codec_get_id	libavformat/avidec.c	/^enum CodecID codec_get_id(const CodecTag *tags, unsigned int tag)$/;"	f
+codec_id	libavcodec/avcodec.h	/^		enum CodecID codec_id; \/\/ see CODEC_ID_xxx$/;"	m	struct:AVCodecContext	typeref:enum:AVCodecContext::CodecID
+codec_type	libavcodec/avcodec.h	/^		enum CodecType codec_type; \/\/ see CODEC_TYPE_xxx$/;"	m	struct:AVCodecContext	typeref:enum:AVCodecContext::CodecType
+codec_wav_tags	libavformat/avidec.c	/^const CodecTag codec_wav_tags[] =$/;"	v
+color_type	libavcodec/imgconvert.c	/^    uint8_t color_type; \/\/ color type (see FF_COLOR_xxx constants)$/;"	m	struct:PixFmtInfo	file:
+cond	ffplay.c	/^    SDL_cond *cond;$/;"	m	struct:PacketQueue	file:
+conv411	libavcodec/imgconvert.c	/^static void conv411(uint8_t *dst, int dst_wrap, const uint8_t *src, int src_wrap, int width, int height)$/;"	f	file:
+convert	libavcodec/imgconvert.c	/^    void(*convert)(AVPicture *dst, const AVPicture *src, int width, int height);$/;"	m	struct:ConvertEntry	file:
+convert_table	libavcodec/imgconvert.c	/^static ConvertEntry convert_table[PIX_FMT_NB][PIX_FMT_NB];$/;"	v	file:
+cropTbl	libavcodec/dsputil.c	/^uint8_t cropTbl[256+2 * MAX_NEG_CROP] = {0, };$/;"	v
+cum_len	libavformat/avidec.c	/^    int64_t cum_len; \/\/ temporary storage (used during seek)$/;"	m	struct:__anon1	file:
+cur_stream	ffplay.c	/^static VideoState *cur_stream;$/;"	v	file:
+cvector	libavcodec/truespeech.c	/^    int16_t cvector[8];  \/\/ correlated input vector$/;"	m	struct:TSContext	file:
+data	libavcodec/avcodec.h	/^		uint8_t *data[4];$/;"	m	struct:AVFrame
+data	libavcodec/avcodec.h	/^		uint8_t *data[4];$/;"	m	struct:AVPicture
+data	libavcodec/utils_codec.c	/^	uint8_t *data[4];$/;"	m	struct:InternalBuffer	file:
+data	libavformat/avformat.h	/^		uint8_t *data;\/\/ 实际保存音视频数据缓存的首地址$/;"	m	struct:AVPacket
+dbg	libavformat/avformat.h	/^		int dbg; \/\/only for debug$/;"	m	struct:AVFormatParameters
+decode	libavcodec/avcodec.h	/^		int(*decode)(AVCodecContext *, void *outdata, int *outdata_size, uint8_t *buf, int buf_size);$/;"	m	struct:AVCodec
+decode_thread	ffplay.c	/^static int decode_thread(void *arg)$/;"	f	file:
+den	libavutil/rational.h	/^    int den; \/\/ denominator \/\/ 分母$/;"	m	struct:AVRational
+depth	libavcodec/imgconvert.c	/^    uint8_t depth; \/\/ bit depth of the color components$/;"	m	struct:PixFmtInfo	file:
+destruct	libavformat/avformat.h	/^		void(*destruct)(struct AVPacket*);$/;"	m	struct:AVPacket
+do_exit	ffplay.c	/^void do_exit(void)$/;"	f
+dsputil_static_init	libavcodec/dsputil.c	/^void dsputil_static_init(void)$/;"	f
+dts	libavformat/avformat.h	/^		int64_t dts; \/\/ decompression time stamp in time_base units$/;"	m	struct:AVPacket
+encode	libavcodec/avcodec.h	/^		int(*encode)(AVCodecContext *, uint8_t *buf, int buf_size, void *data);$/;"	m	struct:AVCodec
+eof_reached	libavformat/avio.h	/^    int eof_reached; \/\/ true if eof reached$/;"	m	struct:ByteIOContext
+error	libavformat/avio.h	/^    int error;       \/\/ contains the error code or 0 if no error happened$/;"	m	struct:ByteIOContext
+event_loop	ffplay.c	/^void event_loop(void) \/\/ handle an event sent by the GUI$/;"	f
+extensions	libavformat/avformat.h	/^		const char *extensions;     \/\/ 文件扩展名$/;"	m	struct:AVInputFormat
+extradata	libavcodec/avcodec.h	/^		unsigned char *extradata; \/\/ Codec的私有数据，对Audio是WAVEFORMATEX结构扩展字节。$/;"	m	struct:AVCodecContext
+extradata_size	libavcodec/avcodec.h	/^		int extradata_size; \/\/ 对Video是BITMAPINFOHEADER后的扩展字节$/;"	m	struct:AVCodecContext
+ff_img_copy_plane	libavcodec/imgconvert.c	/^void ff_img_copy_plane(uint8_t *dst, int dst_wrap, const uint8_t *src, int src_wrap, int width, int height)$/;"	f
+ff_shrink22	libavcodec/imgconvert.c	/^void ff_shrink22(uint8_t *dst, int dst_wrap, const uint8_t *src, int src_wrap, int width, int height)$/;"	f
+ff_shrink44	libavcodec/imgconvert.c	/^void ff_shrink44(uint8_t *dst, int dst_wrap, const uint8_t *src, int src_wrap, int width, int height)$/;"	f
+file_close	libavformat/file.c	/^static int file_close(URLContext *h)$/;"	f	file:
+file_iformat	ffplay.c	/^static AVInputFormat *file_iformat;$/;"	v	file:
+file_open	libavformat/file.c	/^static int file_open(URLContext *h, const char *filename, int flags)$/;"	f	file:
+file_protocol	libavformat/file.c	/^URLProtocol file_protocol =$/;"	v
+file_read	libavformat/file.c	/^static int file_read(URLContext *h, unsigned char *buf, int size)$/;"	f	file:
+file_seek	libavformat/file.c	/^static offset_t file_seek(URLContext *h, offset_t pos, int whence)$/;"	f	file:
+file_write	libavformat/file.c	/^static int file_write(URLContext *h, unsigned char *buf, int size)$/;"	f	file:
+filename	ffplay.c	/^    char filename[240];$/;"	m	struct:VideoState	file:
+filename	libavformat/avformat.h	/^		const char *filename;$/;"	m	struct:AVProbeData
+filename	libavformat/avio.h	/^    char filename[1]; \/\/ specified filename$/;"	m	struct:URLContext
+fill_buffer	libavformat/aviobuf.c	/^static void fill_buffer(ByteIOContext *s)$/;"	f	file:
+filtbuf	libavcodec/truespeech.c	/^    int filtbuf[146];    \/\/ some big vector used for storing filters$/;"	m	struct:TSContext	file:
+filters	libavcodec/truespeech.c	/^    int16_t filters[32]; \/\/ filters for every subframe$/;"	m	struct:TSContext	file:
+filtval	libavcodec/truespeech.c	/^    int filtval;         \/\/ gain value for one function$/;"	m	struct:TSContext	file:
+first_avcodec	libavcodec/utils_codec.c	/^AVCodec *first_avcodec = NULL;$/;"	v
+first_iformat	libavformat/utils_format.c	/^AVInputFormat *first_iformat = NULL;$/;"	v
+first_pkt	ffplay.c	/^    AVPacketList *first_pkt,  *last_pkt;$/;"	m	struct:PacketQueue	file:
+first_protocol	libavformat/avio.c	/^URLProtocol *first_protocol = NULL;$/;"	v
+flag	libavcodec/truespeech.c	/^    int flag;            \/\/ 1-bit flag, shows how to choose filters$/;"	m	struct:TSContext	file:
+flags	libavformat/avformat.h	/^		int flags: 2;$/;"	m	struct:AVIndexEntry
+flags	libavformat/avformat.h	/^		int flags;\/\/ 数据包的一些标记，比如是否是关键帧等$/;"	m	struct:AVPacket
+flags	libavformat/avio.h	/^    int flags;$/;"	m	struct:URLContext
+frame	libavcodec/msrle.c	/^    AVFrame frame;$/;"	m	struct:MsrleContext	file:
+frame_last_delay	libavformat/avformat.h	/^		double frame_last_delay;\/\/帧最后延迟$/;"	m	struct:AVStream
+frame_number	libavcodec/avcodec.h	/^		int frame_number; \/\/ audio or video frame number$/;"	m	struct:AVCodecContext
+frame_offset	libavformat/avidec.c	/^    int64_t frame_offset; \/\/ current frame(video) or byte(audio) counter(used to compute the pts)$/;"	m	struct:__anon1	file:
+framew_last_delay	ffplay.c	/^    double framew_last_delay;$/;"	m	struct:VideoState	file:
+get_buffer	libavcodec/avcodec.h	/^		int(*get_buffer)(struct AVCodecContext *c, AVFrame *pic);$/;"	m	struct:AVCodecContext
+get_byte	libavformat/aviobuf.c	/^int get_byte(ByteIOContext *s) \/\/ NOTE: return 0 if EOF, so you cannot use it if EOF handling is necessary$/;"	f
+get_le16	libavformat/aviobuf.c	/^unsigned int get_le16(ByteIOContext *s)$/;"	f
+get_le32	libavformat/aviobuf.c	/^unsigned int get_le32(ByteIOContext *s)$/;"	f
+get_riff	libavformat/avidec.c	/^static int get_riff(AVIContext *avi, ByteIOContext *pb) $/;"	f	file:
+gif_clut_index	libavcodec/imgconvert.c	/^static inline unsigned char gif_clut_index(uint8_t r, uint8_t g, uint8_t b)$/;"	f	file:
+glue	libavcodec/imgconvert.c	5;"	d	file:
+glue	libavcodec/imgconvert_template.h	/^static int glue(get_alpha_info_, RGB_NAME)(const AVPicture *src, int width, int height)$/;"	f
+glue	libavcodec/imgconvert_template.h	/^static void glue(RGB_NAME, _to_gray)(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f
+glue	libavcodec/imgconvert_template.h	/^static void glue(RGB_NAME, _to_pal8)(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f
+glue	libavcodec/imgconvert_template.h	/^static void glue(RGB_NAME, _to_rgb24)(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f
+glue	libavcodec/imgconvert_template.h	/^static void glue(RGB_NAME, _to_rgba32)(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f
+glue	libavcodec/imgconvert_template.h	/^static void glue(RGB_NAME, _to_yuv420p)(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f
+glue	libavcodec/imgconvert_template.h	/^static void glue(gray_to_, RGB_NAME)(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f
+glue	libavcodec/imgconvert_template.h	/^static void glue(pal8_to_, RGB_NAME)(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f
+glue	libavcodec/imgconvert_template.h	/^static void glue(rgb24_to_, RGB_NAME)(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f
+glue	libavcodec/imgconvert_template.h	/^static void glue(rgba32_to_, RGB_NAME)(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f
+glue	libavcodec/imgconvert_template.h	/^static void glue(yuv420p_to_, RGB_NAME)(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f
+glue	libavcodec/imgconvert_template.h	/^static void glue(yuvj420p_to_, RGB_NAME)(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f
+gray_to_mono	libavcodec/imgconvert.c	/^static void gray_to_mono(AVPicture *dst, const AVPicture *src, int width, int height, int xor_mask)$/;"	f	file:
+gray_to_monoblack	libavcodec/imgconvert.c	/^static void gray_to_monoblack(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f	file:
+gray_to_monowhite	libavcodec/imgconvert.c	/^static void gray_to_monowhite(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f	file:
+grow21	libavcodec/imgconvert.c	/^static void grow21(uint8_t *dst, int dst_wrap, const uint8_t *src, int src_wrap, int width, int height)$/;"	f	file:
+grow21_line	libavcodec/imgconvert.c	/^static void grow21_line(uint8_t *dst, const uint8_t *src, int width)$/;"	f	file:
+grow22	libavcodec/imgconvert.c	/^static void grow22(uint8_t *dst, int dst_wrap, const uint8_t *src, int src_wrap, int width, int height)$/;"	f	file:
+grow41	libavcodec/imgconvert.c	/^static void grow41(uint8_t *dst, int dst_wrap, const uint8_t *src, int src_wrap, int width, int height)$/;"	f	file:
+grow41_line	libavcodec/imgconvert.c	/^static void grow41_line(uint8_t *dst, const uint8_t *src, int width)$/;"	f	file:
+grow44	libavcodec/imgconvert.c	/^static void grow44(uint8_t *dst, int dst_wrap, const uint8_t *src, int src_wrap, int width, int height)$/;"	f	file:
+guess_ni_flag	libavformat/avidec.c	/^static int guess_ni_flag(AVFormatContext *s)$/;"	f	file:
+height	ffplay.c	/^    int width, height; \/\/ source height & width$/;"	m	struct:VideoPicture	file:
+height	libavcodec/avcodec.h	/^		int width, height;$/;"	m	struct:AVCodecContext
+ic	ffplay.c	/^    AVFormatContext *ic;\/\/ 关联的主要数据结构是 ByteIOContext 和 AVStream$/;"	m	struct:VideoState	file:
+id	libavcodec/avcodec.h	/^		enum CodecID id;$/;"	m	struct:AVCodec	typeref:enum:AVCodec::CodecID
+id	libavformat/avidec.c	/^    int id;$/;"	m	struct:__anon3	file:
+ideoq	ffplay.c	/^    PacketQueue ideoq; \/\/ 视频数据包队列，注意瘦身后的ffplay 一包视频数据是完整的一帧$/;"	m	struct:VideoState	file:
+iformat	libavformat/avformat.h	/^		struct AVInputFormat *iformat;\/\/ 关联程序运行时，实际的文件容器格式指针$/;"	m	struct:AVFormatContext	typeref:struct:AVFormatContext::AVInputFormat
+img_apply_table	libavcodec/imgconvert.c	/^static void img_apply_table(uint8_t *dst, int dst_wrap, const uint8_t *src, int src_wrap,$/;"	f	file:
+img_convert	libavcodec/imgconvert.c	/^int img_convert(AVPicture *dst, int dst_pix_fmt, const AVPicture *src, int src_pix_fmt, $/;"	f
+img_convert_init	libavcodec/imgconvert.c	/^static void img_convert_init(void)$/;"	f	file:
+img_copy	libavcodec/imgconvert.c	/^void img_copy(AVPicture *dst, const AVPicture *src, int pix_fmt, int width, int height)$/;"	f
+index_entries	libavformat/avformat.h	/^		AVIndexEntry *index_entries; \/\/ only used if the format does not support seeking natively$/;"	m	struct:AVStream
+index_entries_allocated_size	libavformat/avformat.h	/^		int index_entries_allocated_size;$/;"	m	struct:AVStream
+init	libavcodec/avcodec.h	/^		int(*init)(AVCodecContext*);$/;"	m	struct:AVCodec
+init_put_byte	libavformat/aviobuf.c	/^int init_put_byte(ByteIOContext *s,$/;"	f
+inline	libavutil/common.h	16;"	d
+input_filename	ffplay.c	/^static const char *input_filename;$/;"	v	file:
+int16_t	libavutil/common.h	/^typedef signed short int16_t;$/;"	t
+int32_t	libavutil/common.h	/^typedef signed int int32_t;$/;"	t
+int64_t	libavutil/common.h	/^typedef signed __int64 int64_t;$/;"	t
+int64_t	libavutil/common.h	/^typedef signed long long int64_t;$/;"	t
+int64_t_C	libavutil/common.h	42;"	d
+int64_t_C	libavutil/common.h	45;"	d
+int8_t	libavutil/common.h	/^typedef signed char int8_t;$/;"	t
+internal_buffer	libavcodec/avcodec.h	/^		void *internal_buffer;$/;"	m	struct:AVCodecContext
+internal_buffer_count	libavcodec/avcodec.h	/^		int internal_buffer_count;$/;"	m	struct:AVCodecContext
+is_alpha	libavcodec/imgconvert.c	/^    uint8_t is_alpha; \/\/ true if alpha can be specified$/;"	m	struct:PixFmtInfo	file:
+is_yuv_planar	libavcodec/imgconvert.c	/^static inline int is_yuv_planar(PixFmtInfo *ps)$/;"	f	file:
+last_pkt	ffplay.c	/^    AVPacketList *first_pkt,  *last_pkt;$/;"	m	struct:PacketQueue	file:
+le2me_16	libavutil/bswap.h	29;"	d
+le2me_32	libavutil/bswap.h	30;"	d
+linesize	libavcodec/avcodec.h	/^		int linesize[4];$/;"	m	struct:AVFrame
+linesize	libavcodec/avcodec.h	/^		int linesize[4];$/;"	m	struct:AVPicture
+linesize	libavcodec/utils_codec.c	/^	int  linesize[4];$/;"	m	struct:InternalBuffer	file:
+main	ffplay.c	/^int main(int argc, char **argv)$/;"	f
+main	ffplay.c	19;"	d	file:
+match_ext	libavformat/utils_format.c	/^int match_ext(const char *filename, const char *extensions)$/;"	f
+max_packet_size	libavformat/avio.h	/^    int max_packet_size; \/\/ if non zero, the stream is packetized with this max packet size$/;"	m	struct:URLContext
+max_packet_size	libavformat/avio.h	/^    int max_packet_size;$/;"	m	struct:ByteIOContext
+mono_to_gray	libavcodec/imgconvert.c	/^static void mono_to_gray(AVPicture *dst, const AVPicture *src, int width, int height, int xor_mask)$/;"	f	file:
+monoblack_to_gray	libavcodec/imgconvert.c	/^static void monoblack_to_gray(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f	file:
+monowhite_to_gray	libavcodec/imgconvert.c	/^static void monowhite_to_gray(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f	file:
+movi_end	libavformat/avidec.c	/^    int64_t movi_end;    $/;"	m	struct:__anon2	file:
+movi_list	libavformat/avidec.c	/^    int64_t movi_list;   $/;"	m	struct:__anon2	file:
+msrle_decode_end	libavcodec/msrle.c	/^static int msrle_decode_end(AVCodecContext *avctx)$/;"	f	file:
+msrle_decode_frame	libavcodec/msrle.c	/^static int msrle_decode_frame(AVCodecContext *avctx, void *data, int *data_size, uint8_t *buf, int buf_size)$/;"	f	file:
+msrle_decode_init	libavcodec/msrle.c	/^static int msrle_decode_init(AVCodecContext *avctx)$/;"	f	file:
+msrle_decode_pal4	libavcodec/msrle.c	/^static void msrle_decode_pal4(MsrleContext *s)$/;"	f	file:
+msrle_decode_pal8	libavcodec/msrle.c	/^static void msrle_decode_pal8(MsrleContext *s)$/;"	f	file:
+msrle_decoder	libavcodec/msrle.c	/^AVCodec msrle_decoder =$/;"	v
+must_flush	libavformat/avio.h	/^    int must_flush;  \/\/ true if the next seek should flush$/;"	m	struct:ByteIOContext
+mutex	ffplay.c	/^    SDL_mutex *mutex;$/;"	m	struct:PacketQueue	file:
+name	libavcodec/avcodec.h	/^		const char *name;$/;"	m	struct:AVCodec
+name	libavcodec/imgconvert.c	/^    const char *name;$/;"	m	struct:PixFmtInfo	file:
+name	libavformat/avformat.h	/^		const char *name;\/\/文件格式容器格式名$/;"	m	struct:AVInputFormat
+name	libavformat/avio.h	/^    const char *name;$/;"	m	struct:URLProtocol
+nb_channels	libavcodec/imgconvert.c	/^    uint8_t nb_channels; \/\/ number of channels (including alpha)$/;"	m	struct:PixFmtInfo	file:
+nb_index_entries	libavformat/avformat.h	/^		int nb_index_entries;$/;"	m	struct:AVStream
+nb_streams	libavformat/avformat.h	/^		int nb_streams;\/\/ 广义输入文件中媒体流计数$/;"	m	struct:AVFormatContext
+newvec	libavcodec/truespeech.c	/^    int16_t newvec[60];  \/\/ tmp vector$/;"	m	struct:TSContext	file:
+next	libavcodec/avcodec.h	/^		struct AVCodec *next;$/;"	m	struct:AVCodec	typeref:struct:AVCodec::AVCodec
+next	libavformat/avformat.h	/^		struct AVInputFormat *next;\/\/将所有格式的文件容器格式连成一个链表$/;"	m	struct:AVInputFormat	typeref:struct:AVInputFormat::AVInputFormat
+next	libavformat/avformat.h	/^		struct AVPacketList *next;$/;"	m	struct:AVPacketList	typeref:struct:AVPacketList::AVPacketList
+next	libavformat/avio.h	/^    struct URLProtocol *next;$/;"	m	struct:URLProtocol	typeref:struct:URLProtocol::URLProtocol
+non_interleaved	libavformat/avidec.c	/^    int non_interleaved;$/;"	m	struct:__anon2	file:
+num	libavutil/rational.h	/^    int num; \/\/ numerator   \/\/ 分子$/;"	m	struct:AVRational
+offset1	libavcodec/truespeech.c	/^    int offset1[2];      \/\/ 8-bit value, used in one copying offset$/;"	m	struct:TSContext	file:
+offset2	libavcodec/truespeech.c	/^    int offset2[4];      \/\/ 7-bit value, encodes offsets for copying and for two-point filter$/;"	m	struct:TSContext	file:
+offset_t	libavformat/avio.h	/^typedef int64_t offset_t;$/;"	t
+opaque	libavformat/avio.h	/^    void *opaque;$/;"	m	struct:ByteIOContext
+open	libavformat/file.c	12;"	d	file:
+packet_queue_abort	ffplay.c	/^static void packet_queue_abort(PacketQueue *q)$/;"	f	file:
+packet_queue_end	ffplay.c	/^static void packet_queue_end(PacketQueue *q)$/;"	f	file:
+packet_queue_flush	ffplay.c	/^static void packet_queue_flush(PacketQueue *q)$/;"	f	file:
+packet_queue_get	ffplay.c	/^static int packet_queue_get(PacketQueue *q, AVPacket *pkt, int block)$/;"	f	file:
+packet_queue_init	ffplay.c	/^static void packet_queue_init(PacketQueue *q) \/\/ packet queue handling$/;"	f	file:
+packet_queue_put	ffplay.c	/^static int packet_queue_put(PacketQueue *q, AVPacket *pkt)$/;"	f	file:
+packet_size	libavformat/avidec.c	/^    int packet_size;$/;"	m	struct:__anon1	file:
+palctrl	libavcodec/avcodec.h	/^		struct AVPaletteControl *palctrl;$/;"	m	struct:AVCodecContext	typeref:struct:AVCodecContext::AVPaletteControl
+palette	libavcodec/avcodec.h	/^		unsigned int palette[AVPALETTE_COUNT];$/;"	m	struct:AVPaletteControl
+palette_changed	libavcodec/avcodec.h	/^		int palette_changed;$/;"	m	struct:AVPaletteControl
+parse_tid	ffplay.c	/^    SDL_Thread *parse_tid;$/;"	m	struct:VideoState	file:
+pb	libavformat/avformat.h	/^		ByteIOContext pb;\/\/ 关联广义输入文件$/;"	m	struct:AVFormatContext
+pictq	ffplay.c	/^    VideoPicture pictq[VIDEO_PICTURE_QUEUE_SIZE];\/\/ 输出视频队列，瘦身后的ffplay只有一项$/;"	m	struct:VideoState	file:
+pix_fmt	libavcodec/avcodec.h	/^		enum PixelFormat pix_fmt;$/;"	m	struct:AVCodecContext	typeref:enum:AVCodecContext::PixelFormat
+pix_fmt_info	libavcodec/imgconvert.c	/^static PixFmtInfo pix_fmt_info[PIX_FMT_NB] =$/;"	v	file:
+pixel_type	libavcodec/imgconvert.c	/^    uint8_t pixel_type; \/\/ pixel storage type (see FF_PIXEL_xxx constants)$/;"	m	struct:PixFmtInfo	file:
+pkt	libavformat/avformat.h	/^		AVPacket pkt;$/;"	m	struct:AVPacketList
+pos	libavformat/avformat.h	/^		int64_t pos; \/\/ byte position in stream, -1 if unknown$/;"	m	struct:AVPacket
+pos	libavformat/avformat.h	/^		int64_t pos;$/;"	m	struct:AVIndexEntry
+pos	libavformat/avio.h	/^    offset_t pos;    \/\/ position in the file of the current buffer$/;"	m	struct:ByteIOContext
+prefix	libavformat/avidec.c	/^    int prefix;      \/\/ normally 'd'<<8 + 'c' or 'w'<<8 + 'b'$/;"	m	struct:__anon1	file:
+prefix_count	libavformat/avidec.c	/^    int prefix_count;$/;"	m	struct:__anon1	file:
+prevfilt	libavcodec/truespeech.c	/^    int prevfilt[8];     \/\/ filter from previous frame$/;"	m	struct:TSContext	file:
+priv_data	libavcodec/avcodec.h	/^		void *priv_data;$/;"	m	struct:AVCodecContext
+priv_data	libavformat/avformat.h	/^		void *priv_data;       \/\/ AVIStream$/;"	m	struct:AVStream
+priv_data	libavformat/avformat.h	/^		void *priv_data;\/\/ 关联具体文件容器格式上下文的指针，在本例中是AVIContext$/;"	m	struct:AVFormatContext
+priv_data	libavformat/avio.h	/^    void *priv_data;$/;"	m	struct:URLContext
+priv_data_size	libavcodec/avcodec.h	/^		int priv_data_size;$/;"	m	struct:AVCodec
+priv_data_size	libavformat/avformat.h	/^		int priv_data_size;\/\/程序运行时,文件容器格式对应的上下文结构大小,便于内存分配$/;"	m	struct:AVInputFormat
+prot	libavformat/avio.h	/^    struct URLProtocol *prot;$/;"	m	struct:URLContext	typeref:struct:URLContext::URLProtocol
+pstrcpy	libavformat/cutils.c	/^void pstrcpy(char *buf, int buf_size, const char *str)$/;"	f
+pts	libavformat/avformat.h	/^		int64_t pts; \/\/ presentation time stamp in time_base units$/;"	m	struct:AVPacket
+pulseoff	libavcodec/truespeech.c	/^    int pulseoff[4];     \/\/ 4-bit offset of pulse values block$/;"	m	struct:TSContext	file:
+pulsepos	libavcodec/truespeech.c	/^    int pulsepos[4];     \/\/ 27-bit variable, encodes 7 pulse positions$/;"	m	struct:TSContext	file:
+pulseval	libavcodec/truespeech.c	/^    int pulseval[4];     \/\/ 7x2-bit pulse values$/;"	m	struct:TSContext	file:
+rate	libavformat/avidec.c	/^    int rate;$/;"	m	struct:__anon1	file:
+read_buf	libavformat/avio.h	/^    int (*read_buf)(void *opaque, uint8_t *buf, int buf_size);$/;"	m	struct:ByteIOContext
+read_close	libavformat/avformat.h	/^		int(*read_close)(struct AVFormatContext*);$/;"	m	struct:AVInputFormat
+read_header	libavformat/avformat.h	/^		int(*read_header)(struct AVFormatContext *, AVFormatParameters *ap);$/;"	m	struct:AVInputFormat
+read_packet	libavformat/avformat.h	/^		int(*read_packet)(struct AVFormatContext *, AVPacket *pkt);$/;"	m	struct:AVInputFormat
+read_probe	libavformat/avformat.h	/^		int(*read_probe)(AVProbeData*);$/;"	m	struct:AVInputFormat
+reget_buffer	libavcodec/avcodec.h	/^		int(*reget_buffer)(struct AVCodecContext *c, AVFrame *pic);$/;"	m	struct:AVCodecContext
+register_avcodec	libavcodec/utils_codec.c	/^void register_avcodec(AVCodec *format)$/;"	f
+register_protocol	libavformat/avio.c	/^int register_protocol(URLProtocol *protocol)$/;"	f
+release_buffer	libavcodec/avcodec.h	/^		void(*release_buffer)(struct AVCodecContext *c, AVFrame *pic);$/;"	m	struct:AVCodecContext
+remaining	libavformat/avidec.c	/^    int remaining;$/;"	m	struct:__anon1	file:
+rgb24_to_yuv444p	libavcodec/imgconvert_template.h	/^static void rgb24_to_yuv444p(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f
+rgb24_to_yuvj420p	libavcodec/imgconvert_template.h	/^static void rgb24_to_yuvj420p(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f
+rgb24_to_yuvj444p	libavcodec/imgconvert_template.h	/^static void rgb24_to_yuvj444p(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f
+riff_end	libavformat/avidec.c	/^    int64_t riff_end;    \/\/ RIFF块大小$/;"	m	struct:__anon2	file:
+sample_rate	libavcodec/avcodec.h	/^		int sample_rate; \/\/ samples per sec  \/\/ audio only$/;"	m	struct:AVCodecContext
+sample_size	libavformat/avidec.c	/^    int sample_size; \/\/ size of one sample (or packet) (in the rate\/scale sense) in bytes$/;"	m	struct:__anon1	file:
+scale	libavformat/avidec.c	/^    int scale;$/;"	m	struct:__anon1	file:
+screen	ffplay.c	/^static SDL_Surface *screen;$/;"	v	file:
+sdl_audio_callback	ffplay.c	/^void sdl_audio_callback(void *opaque, Uint8 *stream, int len)$/;"	f
+seek	libavformat/avio.h	/^    offset_t(*seek)(void *opaque, offset_t offset, int whence);$/;"	m	struct:ByteIOContext
+shrink12	libavcodec/imgconvert.c	/^static void shrink12(uint8_t *dst, int dst_wrap, const uint8_t *src, int src_wrap, int width, int height)$/;"	f	file:
+shrink21	libavcodec/imgconvert.c	/^static void shrink21(uint8_t *dst, int dst_wrap, const uint8_t *src, int src_wrap, int width, int height)$/;"	f	file:
+shrink41	libavcodec/imgconvert.c	/^static void shrink41(uint8_t *dst, int dst_wrap, const uint8_t *src, int src_wrap, int width, int height)$/;"	f	file:
+size	ffplay.c	/^    int size;$/;"	m	struct:PacketQueue	file:
+size	libavcodec/msrle.c	/^    int size;$/;"	m	struct:MsrleContext	file:
+size	libavformat/avformat.h	/^		int size: 30; \/\/yeah trying to keep the size of this small to reduce memory requirements (its 24 vs 32 byte due to possible 8byte align)$/;"	m	struct:AVIndexEntry
+size	libavformat/avformat.h	/^		int size; \/\/ 实际保存音视频数据缓存的大小$/;"	m	struct:AVPacket
+strcasecmp	libavutil/common.h	/^static int strcasecmp(char *s1, const char *s2)$/;"	f
+stream_close	ffplay.c	/^static void stream_close(VideoState *is)$/;"	f	file:
+stream_component_close	ffplay.c	/^static void stream_component_close(VideoState *is, int stream_index)$/;"	f	file:
+stream_component_open	ffplay.c	/^static int stream_component_open(VideoState *is, int stream_index)$/;"	f	file:
+stream_index	libavformat/avformat.h	/^		int stream_index;\/\/ 前音视频数据包对应的流索引，在本例中用于区别音频还是视频$/;"	m	struct:AVPacket
+stream_index_2	libavformat/avidec.c	/^    int stream_index_2;  \/\/ 为了和AVPacket中的stream_index相区别$/;"	m	struct:__anon2	file:
+stream_open	ffplay.c	/^static VideoState *stream_open(const char *filename, AVInputFormat *iformat)$/;"	f	file:
+streams	libavformat/avformat.h	/^		AVStream *streams[MAX_STREAMS];\/\/ 关联广义输入文件中的媒体流$/;"	m	struct:AVFormatContext
+strstart	libavformat/cutils.c	/^int strstart(const char *str, const char *val, const char **ptr)$/;"	f
+tag	libavformat/avidec.c	/^    unsigned int tag;$/;"	m	struct:__anon3	file:
+time_base	libavformat/avformat.h	/^		AVRational time_base; \/\/ 由 av_set_pts_info()函数初始化$/;"	m	struct:AVStream
+timestamp	libavformat/avformat.h	/^		int64_t timestamp;$/;"	m	struct:AVIndexEntry
+tmp1	libavcodec/truespeech.c	/^    int16_t tmp1[8];     \/\/ coefficients for adding to out$/;"	m	struct:TSContext	file:
+tmp2	libavcodec/truespeech.c	/^    int16_t tmp2[8];     \/\/ coefficients for adding to out$/;"	m	struct:TSContext	file:
+tmp3	libavcodec/truespeech.c	/^    int16_t tmp3[8];     \/\/ coefficients for adding to out$/;"	m	struct:TSContext	file:
+truespeech_apply_twopoint_filter	libavcodec/truespeech.c	/^static void truespeech_apply_twopoint_filter(TSContext *dec, int quart)$/;"	f	file:
+truespeech_correlate_filter	libavcodec/truespeech.c	/^static void truespeech_correlate_filter(TSContext *dec)$/;"	f	file:
+truespeech_decode_frame	libavcodec/truespeech.c	/^static int truespeech_decode_frame(AVCodecContext *avctx, void *data, int *data_size, uint8_t *buf, int buf_size)$/;"	f	file:
+truespeech_decode_init	libavcodec/truespeech.c	/^static int truespeech_decode_init(AVCodecContext *avctx)$/;"	f	file:
+truespeech_decoder	libavcodec/truespeech.c	/^AVCodec truespeech_decoder =$/;"	v
+truespeech_filters_merge	libavcodec/truespeech.c	/^static void truespeech_filters_merge(TSContext *dec)$/;"	f	file:
+truespeech_place_pulses	libavcodec/truespeech.c	/^static void truespeech_place_pulses(TSContext *dec, int16_t *out, int quart)$/;"	f	file:
+truespeech_read_frame	libavcodec/truespeech.c	/^static void truespeech_read_frame(TSContext *dec, uint8_t *input)$/;"	f	file:
+truespeech_save_prevvec	libavcodec/truespeech.c	/^static void truespeech_save_prevvec(TSContext *c)$/;"	f	file:
+truespeech_synth	libavcodec/truespeech.c	/^static void truespeech_synth(TSContext *dec, int16_t *out, int quart)$/;"	f	file:
+truespeech_update_filters	libavcodec/truespeech.c	/^static void truespeech_update_filters(TSContext *dec, int16_t *out, int quart)$/;"	f	file:
+ts_140	libavcodec/truespeech_data.h	/^static const int16_t ts_140[120] =$/;"	v
+ts_230	libavcodec/truespeech_data.h	/^static const int16_t ts_230[8] = { 0x7F3B, 0x7E78, 0x7DB6, 0x7CF5, 0x7C35, 0x7B76, 0x7AB8, 0x79FC };$/;"	v
+ts_240	libavcodec/truespeech_data.h	/^static const int16_t ts_240[25 * 2] =$/;"	v
+ts_562	libavcodec/truespeech_data.h	/^static const int16_t ts_562[64] =$/;"	v
+ts_5E2	libavcodec/truespeech_data.h	/^static const int16_t ts_5E2[8] = { 0x4666, 0x26B8, 0x154C, 0x0BB6, 0x0671, 0x038B, 0x01F3, 0x0112 };$/;"	v
+ts_5F2	libavcodec/truespeech_data.h	/^static const int16_t ts_5F2[8] = { 0x6000, 0x4800, 0x3600, 0x2880, 0x1E60, 0x16C8, 0x1116, 0x0CD1 };$/;"	v
+ts_cb_0	libavcodec/truespeech_data.h	/^static const int16_t ts_cb_0[32] =$/;"	v
+ts_cb_1	libavcodec/truespeech_data.h	/^static const int16_t ts_cb_1[32] =$/;"	v
+ts_cb_2	libavcodec/truespeech_data.h	/^static const int16_t ts_cb_2[16] =$/;"	v
+ts_cb_3	libavcodec/truespeech_data.h	/^static const int16_t ts_cb_3[16] =$/;"	v
+ts_cb_4	libavcodec/truespeech_data.h	/^static const int16_t ts_cb_4[16] =$/;"	v
+ts_cb_5	libavcodec/truespeech_data.h	/^static const int16_t ts_cb_5[8] = { 0xD51B, 0xF12E, 0x042E, 0x13C7, 0x2260, 0x311B, 0x40DE, 0x5385,};$/;"	v
+ts_cb_6	libavcodec/truespeech_data.h	/^static const int16_t ts_cb_6[8] = { 0xB550, 0xC825, 0xD980, 0xE997, 0xF883, 0x0752, 0x1811, 0x2E18,};$/;"	v
+ts_cb_7	libavcodec/truespeech_data.h	/^static const int16_t ts_cb_7[8] = { 0xCEF0, 0xE4F9, 0xF6BB, 0x0646, 0x14F5, 0x23FF, 0x356F, 0x4A8D,};$/;"	v
+ts_codebook	libavcodec/truespeech_data.h	/^static const int16_t *ts_codebook[8] = {ts_cb_0, ts_cb_1, ts_cb_2, ts_cb_3, ts_cb_4, ts_cb_5, ts_cb_6, ts_cb_7};$/;"	v
+type	libavcodec/avcodec.h	/^		enum CodecType type;$/;"	m	struct:AVCodec	typeref:enum:AVCodec::CodecType
+uint16_t	libavutil/common.h	/^typedef unsigned short uint16_t;$/;"	t
+uint32_t	libavutil/common.h	/^typedef unsigned int uint32_t;$/;"	t
+uint64_t	libavutil/common.h	/^typedef unsigned __int64 uint64_t;$/;"	t
+uint64_t	libavutil/common.h	/^typedef unsigned long long uint64_t;$/;"	t
+uint64_t_C	libavutil/common.h	43;"	d
+uint64_t_C	libavutil/common.h	46;"	d
+uint8_t	libavutil/common.h	/^typedef unsigned char uint8_t;$/;"	t
+url_close	libavformat/avio.c	/^int url_close(URLContext *h)$/;"	f
+url_close	libavformat/avio.h	/^    int(*url_close)(URLContext *h);$/;"	m	struct:URLProtocol
+url_fclose	libavformat/aviobuf.c	/^int url_fclose(ByteIOContext *s)$/;"	f
+url_feof	libavformat/aviobuf.c	/^int url_feof(ByteIOContext *s)$/;"	f
+url_ferror	libavformat/aviobuf.c	/^int url_ferror(ByteIOContext *s)$/;"	f
+url_fopen	libavformat/aviobuf.c	/^int url_fopen(ByteIOContext *s, const char *filename, int flags)$/;"	f
+url_fread	libavformat/aviobuf.c	/^int url_fread(ByteIOContext *s, unsigned char *buf, int size) \/\/ get_buffer$/;"	f
+url_fseek	libavformat/aviobuf.c	/^offset_t url_fseek(ByteIOContext *s, offset_t offset, int whence)$/;"	f
+url_fsize	libavformat/aviobuf.c	/^offset_t url_fsize(ByteIOContext *s)$/;"	f
+url_fskip	libavformat/aviobuf.c	/^void url_fskip(ByteIOContext *s, offset_t offset)$/;"	f
+url_ftell	libavformat/aviobuf.c	/^offset_t url_ftell(ByteIOContext *s)$/;"	f
+url_get_max_packet_size	libavformat/avio.c	/^int url_get_max_packet_size(URLContext *h)$/;"	f
+url_open	libavformat/avio.c	/^int url_open(URLContext **puc, const char *filename, int flags)$/;"	f
+url_open	libavformat/avio.h	/^    int(*url_open)(URLContext *h, const char *filename, int flags);$/;"	m	struct:URLProtocol
+url_read	libavformat/avio.c	/^int url_read(URLContext *h, unsigned char *buf, int size)$/;"	f
+url_read	libavformat/avio.h	/^    int(*url_read)(URLContext *h, unsigned char *buf, int size);$/;"	m	struct:URLProtocol
+url_read_buf	libavformat/aviobuf.c	/^static int url_read_buf(void *opaque, uint8_t *buf, int buf_size)$/;"	f	file:
+url_seek	libavformat/avio.c	/^offset_t url_seek(URLContext *h, offset_t pos, int whence)$/;"	f
+url_seek	libavformat/avio.h	/^    offset_t(*url_seek)(URLContext *h, offset_t pos, int whence);$/;"	m	struct:URLProtocol
+url_seek_buf	libavformat/aviobuf.c	/^static offset_t url_seek_buf(void *opaque, offset_t offset, int whence)$/;"	f	file:
+url_setbufsize	libavformat/aviobuf.c	/^int url_setbufsize(ByteIOContext *s, int buf_size) \/\/ must be called before any I\/O$/;"	f
+url_write	libavformat/avio.h	/^    int(*url_write)(URLContext *h, unsigned char *buf, int size);$/;"	m	struct:URLProtocol
+url_write_buf	libavformat/aviobuf.c	160;"	d	file:
+uyvy411_to_yuv411p	libavcodec/imgconvert.c	/^static void uyvy411_to_yuv411p(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f	file:
+uyvy422_to_yuv420p	libavcodec/imgconvert.c	/^static void uyvy422_to_yuv420p(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f	file:
+uyvy422_to_yuv422p	libavcodec/imgconvert.c	/^static void uyvy422_to_yuv422p(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f	file:
+vector	libavcodec/truespeech.c	/^    int16_t vector[8];   \/\/ input vector: 5\/5\/4\/4\/4\/3\/3\/3$/;"	m	struct:TSContext	file:
+video_decoder_mutex	ffplay.c	/^    SDL_mutex *video_decoder_mutex;\/\/视频线程互斥$/;"	m	struct:VideoState	file:
+video_display	ffplay.c	/^static int video_display(VideoState *is, AVFrame *src_frame, double pts)$/;"	f	file:
+video_st	ffplay.c	/^    AVStream *video_st;$/;"	m	struct:VideoState	file:
+video_stream	ffplay.c	/^    int video_stream;\/\/\/ 视频流索引， 实际表示 AVFormatContext结构中 AVStream*streams[]数组中的索引$/;"	m	struct:VideoState	file:
+video_thread	ffplay.c	/^static int video_thread(void *arg)$/;"	f	file:
+video_tid	ffplay.c	/^    SDL_Thread *video_tid;$/;"	m	struct:VideoState	file:
+width	ffplay.c	/^    int width, height; \/\/ source height & width$/;"	m	struct:VideoPicture	file:
+width	libavcodec/avcodec.h	/^		int width, height;$/;"	m	struct:AVCodecContext
+write_buf	libavformat/avio.h	/^    int (*write_buf)(void *opaque, uint8_t *buf, int buf_size);$/;"	m	struct:ByteIOContext
+write_flag	libavformat/avio.h	/^    int write_flag;  \/\/ true if open for writing$/;"	m	struct:ByteIOContext
+x_chroma_shift	libavcodec/imgconvert.c	/^    uint8_t x_chroma_shift; \/\/ X chroma subsampling factor is 2 ^ shift$/;"	m	struct:PixFmtInfo	file:
+xglue	libavcodec/imgconvert.c	4;"	d	file:
+y_ccir_to_jpeg	libavcodec/imgconvert.c	/^static uint8_t y_ccir_to_jpeg[256];$/;"	v	file:
+y_chroma_shift	libavcodec/imgconvert.c	/^    uint8_t y_chroma_shift; \/\/ Y chroma subsampling factor is 2 ^ shift$/;"	m	struct:PixFmtInfo	file:
+y_jpeg_to_ccir	libavcodec/imgconvert.c	/^static uint8_t y_jpeg_to_ccir[256];$/;"	v	file:
+yuv420p_to_uyvy422	libavcodec/imgconvert.c	/^static void yuv420p_to_uyvy422(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f	file:
+yuv420p_to_yuv422	libavcodec/imgconvert.c	/^static void yuv420p_to_yuv422(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f	file:
+yuv422_to_yuv420p	libavcodec/imgconvert.c	/^static void yuv422_to_yuv420p(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f	file:
+yuv422_to_yuv422p	libavcodec/imgconvert.c	/^static void yuv422_to_yuv422p(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f	file:
+yuv422p_to_uyvy422	libavcodec/imgconvert.c	/^static void yuv422p_to_uyvy422(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f	file:
+yuv422p_to_yuv422	libavcodec/imgconvert.c	/^static void yuv422p_to_yuv422(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f	file:
+yuv444p_to_rgb24	libavcodec/imgconvert_template.h	/^static void yuv444p_to_rgb24(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f
+yuvj444p_to_rgb24	libavcodec/imgconvert_template.h	/^static void yuvj444p_to_rgb24(AVPicture *dst, const AVPicture *src, int width, int height)$/;"	f

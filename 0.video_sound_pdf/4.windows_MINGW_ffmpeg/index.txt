@@ -1,0 +1,52 @@
+PDF:windows下MINGW编译ffmpeg
+=====================================================================
+win7-64位+mingw32
+1.安装MINGW
+http://mingw-w64.org/doku.php 这里可以下载mingw64位,但是我不是用的这个
+
+2.去msys里面创建目录
+D:\soft\MinGW\msys\1.0\home\Administrator\source
+D:\soft\MinGW\msys\1.0\home\Administrator\install
+D:\soft\MinGW\msys\1.0\home\Administrator\install\bin
+
+3.配置PATH
+bashrc:
+export PATH=":/home/Administrator/install/bin:$PATH"
+执行 source bashrc
+echo $PATH 查看是否加载
+
+4.安装LIB.exe
+D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\lib.exe
+拷贝到 /home/Administrator/install/bin
+
+5.安装pkg-config
+http://blog.csdn.net/dancing_night/article/details/45059081
+pkg-config_0.26-1_win32.zip
+glib_2.28.8-1_win32.zip
+gettext-runtime_0.18.1.1-2_win32.zip
+把里面的bin下的东西
+拷贝到 /home/Administrator/install/bin
+、
+6.SDL:
+SDL2-devel-2.0.5-mingw.tar.gz
+加压后里面的选取x86_64-w64-mingw32里bin,lib,include
+拷贝到 /home/Administrator/install/bin
+
+修改bin下的sdl-config
+修改 prefix 路径，改为自己实际的安装路径
+prefix=/home/Administrator/install
+删除文件里的两个“ -mwindows”。
+
+7.编译ffmpeg
+下载ffmpeg
+解压到D:\MinGW\msys\1.0\home\Administrator\source
+
+
+8.简单编译安装ffmpeg
+创建1.sh:进行configure
+#!/bin/bash
+./configure --prefix=/home/Administrator/install --enable-gpl --enable-version3 --enable-nonfree --disable-static --enable-shared --disable-doc --disable-htmlpages --disable-manpages --disable-podpages --disable-txtpages --extra-cflags=-I/home/Administrator/install/include --extra-ldflags=-L/home/Administrator/install/lib
+
+然后:
+make
+make install
