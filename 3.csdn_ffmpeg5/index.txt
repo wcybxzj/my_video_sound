@@ -54,4 +54,4 @@ linux:192.168.1.110
 
 ios:
 IntelliDev:
-GUI/DeviceList/PopupViewContorller.m需要指请求到192.168.1.110
+GUI/DeviceList/PopupViewContorller.m中的viewWillAppear方法修改服务端ip:192.168.1.110
